@@ -1,0 +1,36 @@
+<$mt:Include module="header"$>
+<main class="pk_secondary">
+  <div class="contents_in">
+    <!-- ぱんくず（ページ共通） -->
+    <section class="breadcrumb">
+      <div class="contents_in">
+        <ul>
+          <li><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>">墓地公園・納骨堂のご案内</a></li>
+          <li><a href="<$mt:BlogURL$>"><$mt:BlogName$></a></li>
+          <li><span><mt:PageTitle></span></li>
+        </ul>
+      </div>
+    </section>
+    <!-- タイトル（ページ共通） -->
+    <section class="under_page">
+      <div class="contents_in">
+        <div class="ttl_around_h1">
+          <h1><mt:PageTitle></h1>
+        </div>
+      </div>
+      <!-- END  .contents_in -->
+    </section>
+    <!-- END  .under_page -->
+  </div>
+  <!-- END  .contents_in -->
+  <div class="main_wrap">
+    <div class="contents_in">
+      <$mt:PageBody$>
+    </div>
+    <!-----サイドメニューエリア--------->
+    <$mt:Include module="side_nav"$>
+  </div>
+  <!-- END  .main_wrap -->
+</main>
+<!--END #pk_facility-->
+<$mt:Include module="footer"$>

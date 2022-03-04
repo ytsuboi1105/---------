@@ -1,0 +1,73 @@
+<$mt:Include module="header" $>
+<main id="pk_info" class="pk_secondary">
+
+  <!-- ぱんくず（ページ共通） -->
+  <section class="breadcrumb">
+    <div class="contents_in">
+      <ul>
+        <li><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>">墓地公園・納骨堂のご案内</a></li>
+        <li><a href="<$mt:BlogRelativeURL$>"><$mt:BlogName$></a></li>
+        <li><span>お知らせ</span></li>
+      </ul>
+      </div>
+  </section>
+
+  <!-- タイトル（ページ共通） -->
+  <section class="under_page">
+    <div class="contents_in">
+      <div class="ttl_around_h1">
+        <h1>お知らせ</h1>
+      </div>
+    </div><!-- END  .contents_in -->
+  </section><!-- END  .under_page -->
+
+  <!--メインエリア-->
+  <section class="ctn-n-main">
+    <div class="contents_in">
+      <div class="ctn-n-list">
+        <div class="list-all-wrap">
+          <ul class="n-items">
+            <mt:Entries category="お知らせ" paginate_by="20">
+              <li class="n-indiv">
+                <a href="<$mt:EntryPermalink$>">
+                  <p class="n-date">
+                    <$MTDate format="%Y.%m.%d" $>
+                  </p>
+                  <p class="n-ttl">
+                    <$mt:EntryTitle$>
+                  </p>
+                </a>
+              </li>
+              <mt:EntriesFooter>
+          </ul>
+          <!--END .n-items-->
+        </div>
+        <!--END .list-all-wrap-->
+        <!--------pager------------>
+        <div class="pager">
+          <ul class="pagination">
+            <mt:PaginationHasPrevious>
+              <li class="pre"><a href="<$mt:PaginationPreviousURL$>"><span></span></a></li>
+            </mt:PaginationHasPrevious>
+            <mt:PaginationHasNext>
+              <li class="next"><a href="<$mt:PaginationNextURL$>"><span></span></a></li>
+            </mt:PaginationHasNext>
+          </ul>
+        </div>
+        </mt:EntriesFooter>
+        </mt:Entries>
+
+
+      </div>
+      <!--END .ctn-n-list-->
+    </div>
+
+    <!-----サイドメニューエリア--------->
+    <$mt:Include module="side_nav" $>
+
+  </section>
+  <!--END .ctn-n-main-->
+
+</main>
+<!--END #pk_news-->
+<$mt:Include module="footer" $>

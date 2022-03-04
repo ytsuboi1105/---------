@@ -1,0 +1,341 @@
+<$mt:Include module="header" $>
+<div id="pk" class="pk01">
+  <!-- それぞれのページに固有のIDをつけてください。 -->
+
+
+  <section class="cnt_area01">
+    <div class="breadcrumb">
+      <div class="contents_in">
+        <ul>
+          <li><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>">墓地公園・納骨堂のご案内</a></li>
+          <li><$mt:BlogName$></li>
+        </ul>
+      </div>
+      <!-- END  .breadcrumb -->
+    </div>
+    <div class="contents_in">
+      <h1 class="main_title">山光平和記念墓地公園<br class="sp"><span class="sub">山光常楽納骨堂</span></h1>
+      <!-- END  .contents_in -->
+    </div>
+    <div class="contents_in contents_in_slide">
+      <ul class="slider">
+        <mt:Assets field:display_topslider="1">
+          <li><img alt="<$mt:AssetDescription$>" src="<$mt:AssetURL$>" /></li>
+        </mt:Assets>
+      </ul>
+      <!-- END  .contents_in -->
+    </div>
+    <!-- END  .cnt_area01 -->
+  </section>
+
+  <div class="container_out_f">
+    <div class="container_out">
+      <div class="container contents_in">
+
+
+        <section class="cnt_area02">
+          <div class="contents_column left">
+
+            <div class="column_01">
+              <div class="h2_btn">
+                <h2>お知らせ</h2>
+                <div class="more_btn sp"><a href="<$mt:BlogRelativeURL$>information/"><span>もっと見る</span></a></div>
+              </div>
+              <div class="news_box">
+                <mt:Entries category="お知らせ" lastn="3">
+                  <div class="cnt_box"> <a href="<$mt:EntryPermalink$>">
+                      <div class="cnt_box_in">
+                        <div class="flex_box">
+                          <div class="cnt_date">
+                            <$MTDate format="%Y.%m.%d" $>
+                          </div>
+                        </div>
+                        <div class="title">
+                          <$mt:EntryTitle$>
+                        </div>
+                      </div>
+                    </a> </div>
+                </mt:Entries>
+              </div>
+              <div class="more_btn_out pc">
+                <div class="more_btn"><a href="<$mt:BlogRelativeURL$>information/"><span>もっと見る</span></a></div>
+              </div>
+              <!-- END  .column_01 -->
+            </div>
+
+
+            <div class="column_02" id="b_info">
+              <h2>基本情報</h2>
+
+              <dl class="access_dl">
+                <dt>住所</dt>
+                <dd>〒690-2104 島根県松江市八雲町熊野 6286-44
+                  <div class="more_btn_out">
+                    <div class="more_btn"><a href="https://goo.gl/maps/bYC8c1gw8iF4idrg7"
+                        target="_blank"><span>MAPで開く</span></a></div>
+                  </div>
+                </dd>
+              </dl>
+
+              <dl class="tel_dl">
+                <dt>電話番号</dt>
+                <dd>0852-54-1000
+                  <div class="more_btn_out">
+                    <div class="more_btn"><a href="tel:0852541000"><span>電話する</span></a></div>
+                  </div>
+                </dd>
+              </dl>
+
+              <dl>
+                <dt>FAX</dt>
+                <dd>0852-54-1121</dd>
+              </dl>
+              <dl>
+                <dt>開園時間</dt>
+                <dd>午前9:00～午後5:00（入園は午後4:30まで）</dd>
+              </dl>
+              <dl>
+                <dt>休園日</dt>
+                <dd>毎週火曜日（お盆・お彼岸・祝日を除く）</dd>
+              </dl>
+
+              <dl>
+                <dt>休園期間</dt>
+                <dd>毎年12月28日～1月4日<br>
+                  ※1月1日・2日は入園できますが、納骨業務は行っておりません。<br>
+                  なお、開園時間は午前10:00～午後4:00です。<br>
+                  その他の休園日・休園期間は入園できません。<br>
+                </dd>
+              </dl>
+              <!-- END  .column_02 -->
+            </div>
+
+
+            <div class="column_03" id="bosyo">
+              <h2>墓地・納骨堂のご案内</h2>
+
+              <div class="tab_wrap">
+                <input id="tab1" type="radio" name="tab_btn" checked>
+                <input id="tab2" type="radio" name="tab_btn">
+                <input id="tab3" type="radio" name="tab_btn">
+
+                <div class="tab_area">
+                  <label class="tab1_label" for="tab1"><span>墓地</span></label>
+                  <label class="tab2_label" for="tab2">永久収蔵<br class="sp">納骨堂</label>
+                </div>
+
+                <div class="panel_area">
+                  <div id="panel1" class="tab_panel panel_area_in">
+
+                    <h3>山光平和記念墓地公園</h3>
+                    <div class="flex_box flex_box01">
+                      <div class="cnt_box cnt_box01">
+                        <div class="cnt_img"> <img src="<$mt:BlogRelativeURL$>/img/pik01_pk01.png"
+                            alt="画像:山光平和記念墓地公園"> </div>
+                        <!-- 左 -->
+                      </div>
+
+                      <div class="cnt_box cnt_box02">
+                        <div class="cnt_text">
+                          <p>芝生墓所です。墓石の大きさは全て同一のみかげ石となっており、1区画（約4㎡）を末永くお使いいただけます。<br><br>
+                            6寸骨壺を10個埋蔵することができます。<br>（骨壺に入れて埋蔵します）<br>永代にわたってお使いいただけます。</p>
+                        </div>
+                        <!-- 右 -->
+                      </div>
+                      <!-- flex_boxおわり -->
+                    </div>
+
+                    <div class="block_box block_box01">
+                      <div class="cnt_title cnt_title01">納骨・参拝</div>
+
+                      <dl>
+                        <dt>納骨について</dt>
+                        <dd>
+                          <p>係員が納骨のお手伝いを致します。</p>
+                          <div class="link_btn">
+                            <p>納骨手続き（墓地）</p>
+                            <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/cemetery/"></a>
+                          </div>
+                        </dd>
+                      </dl>
+
+                      <dl>
+                        <dt>参拝について</dt>
+                        <dd>
+                          <ul>
+                            <li>・線香・ロウソクは、火災予防のため使用できません。また、喫煙は所定の場所でお願いします。</li>
+                            <li>・お供物は必ずお持ち帰りください。</li>
+                            <li>・園内に備え付けの手桶はご自由にお使いください。ご使用後は元の場所へお返しください。</li>
+                          </ul>
+                        </dd>
+                      </dl>
+
+                      <dl>
+                        <dt>法要</dt>
+                        <dd>
+                          <p>新型コロナウイルス感染防止のため、現在勤行法要は行っておりません。</p>
+                        </dd>
+                      </dl>
+
+                    </div>
+
+
+                    <div class="block_box block_box02">
+                      <div class="cnt_title cnt_title01">購入について</div>
+                      <dl>
+                        <dt>募集状況</dt>
+                        <dd>
+                          <p>申込予約受付中<br>
+                            ※墓所使用申し込みを希望される当会会員の方の予約を受付しています。<br>
+                            当事務局に連絡をしていただくか、以下の書類をプリントアウトのうえ、当事務局までＦＡＸしてください。（FAX：0852-54-1121）</p>
+                          <div class="link_btn">
+                            <p>FAX用書類はこちら</p>
+                            <a href="<$mt:BlogRelativeURL$>img/pdf/sankou_02.pdf"
+                              download="<$mt:BlogRelativeURL$>img/sankou_02.pdf"></a>
+                          </div>後日、「申込書類」を郵送いたします。
+                          <p>※価格・使用開始までの期間につきましては、直接お問い合わせください。</p>
+                        </dd>
+                      </dl>
+                    </div>
+                    <!-- END  .panel_area_in -->
+                  </div>
+
+
+                  <div id="panel2" class="tab_panel panel_area_in">
+
+                    <h3>山光常楽納骨堂</h3>
+                    <div class="flex_box flex_box01">
+                      <div class="cnt_box cnt_box01">
+
+                        <div class="cnt_img">
+                          <img src="<$mt:BlogRelativeURL$>img/pik02_pk01.png" alt="画像:山光常楽納骨堂">
+                        </div>
+                        <!-- 左 -->
+                      </div>
+
+                      <div class="cnt_box cnt_box02">
+                        <div class="cnt_text">
+                          <p>合葬式の納骨施設です。ご遺骨を安心かつ安定して保管できる収蔵施設です。</p>
+                          <br>
+                          <p>骨壺ごとに収蔵し、ご遺骨を当会で永久にお預かりします（納骨後のお引き取り・対面参拝はできません）。</p>
+                          <br>
+                        </div>
+                        <!-- 右 -->
+                      </div>
+                    </div>
+
+                    <div class="block_box block_box01">
+                      <div class="cnt_title cnt_title01">納骨・参拝</div>
+                      <dl>
+                        <dt>納骨について</dt>
+                        <dd>
+                          <p>係員が納骨致します。</p>
+                          <div class="link_btn">
+                            <p>納骨手続き<br class="sp">（永久収蔵納骨堂）</p>
+                            <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary02/"></a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>参拝について</dt>
+                        <dd>
+                          <p>納骨堂の地上正面に設置された墓碑に向かって参拝していただきます。<br>※ご遺骨の対面参拝はできません。</p>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>法要</dt>
+                        <dd>
+                          <p>新型コロナウイルス感染防止のため、現在勤行法要は行っておりません。</p>
+                        </dd>
+                      </dl>
+                    </div>
+
+                    <div class="block_box block_box02">
+                      <div class="cnt_title cnt_title01">購入について</div>
+                      <dl>
+                        <dt>募集状況</dt>
+                        <dd>
+                          <p>申込予約受付中</p>
+                          <p>※申し込みを希望される当会会員の方は、事務局までご連絡ください。</p>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+
+                </div>
+                <!--END .panel_area-->
+              </div>
+              <!--END .tab_wrap-->
+
+              <!-- END  .column_03 -->
+            </div>
+
+            <!-- END  .contents_column -->
+          </div>
+
+          <!-- END  .cnt_area02 -->
+        </section>
+
+        <$mt:Include module="side_nav" $>
+      </div>
+    </div>
+  </div>
+
+  <div class="column_04 procedure_area" id="procedure">
+    <div class="contents_in">
+      <div class="contents_in_sm">
+        <h2>各種手続き</h2>
+        <div class="flex_box">
+          <div class="item_box">
+
+            <div class="tin_box">
+              <span>納骨手続き（墓地）</span>
+              <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/cemetery/"></a>
+            </div>
+
+            <div class="tin_box">
+              <span>納骨手続き<br class="pc">（長期収蔵型納骨堂）</span>
+              <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary01/"></a>
+            </div>
+
+            <div class="tin_box">
+              <span>納骨手続き<br class="pc">（永久収蔵納骨堂）</span>
+              <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary02/"></a>
+            </div>
+
+          </div>
+
+          <div class="cnt_box cnt_box02">
+            <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/reburial/">
+              <div class="cnt_text01 pc"><span>改葬の手続き</span></div>
+              <div class="cnt_img"><img src="<$mt:Link template='メインページ' blog_id='memorial_park'$>common/img/icon_flow01.png" alt="アイコン:改葬の手続きについて">
+              </div>
+              <div class="block">
+                <div class="cnt_text01 sp"><span>改葬の手続き</span></div>
+                <div class="cnt_text02">ご遺骨を移動する<br>「改葬」について</div>
+              </div>
+            </a>
+            <!-- END  .cnt_box -->
+          </div>
+          <div class="cnt_box">
+            <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>other-procedure/">
+              <div class="cnt_text01 pc"><span>その他の手続き</span></div>
+              <div class="cnt_img"><img src="<$mt:Link template='メインページ' blog_id='memorial_park'$>common/img/icon_flow02.png" alt="アイコン:その他の手続きについて">
+              </div>
+              <div class="block">
+                <div class="cnt_text01 sp"><span>その他の手続き</span></div>
+                <div class="cnt_text02">身上変更や承継などの<br>手続きについて</div>
+              </div>
+            </a>
+            <!-- END  .cnt_box -->
+          </div>
+          <!-- END  .flex_box -->
+        </div>
+      </div>
+      <!-- END  .contents_in -->
+    </div>
+  </div>
+
+  <!-- END  #pk -->
+</div>
+<$mt:Include module="footer" $>

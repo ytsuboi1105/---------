@@ -1,0 +1,977 @@
+<$mt:Include module="header" $>
+  <div id="top">
+    <!-- それぞれのページに固有のIDをつけてください。 -->
+
+    <section class="cnt_area01">
+      <div class="contents_in">
+        <div class="video_img">
+          <div class="video pc">
+            <div id="mvplayer"></div>
+            <div id="mvplayer-mask"></div>
+            <!-- <img src="<$mt:BlogRelativeURL$>img/top/video.png" alt="メインビジュアル" class="pc"> -->
+            <!--<video src="img/top/video02.mp4" autoplay loop muted playsinlin class="pc"></video>-->
+          </div>
+          <div class="img_box sp"><img src="<$mt:BlogRelativeURL$>img/top/pic01_top.png" alt="メインビジュアル">
+            <!--<div class="cnt_text"><span>生死不二の福徳と栄光をしのぶ安らぎの場</span>創価学会の<br class="sp">墓地公園・納骨堂</div>-->
+            <div class="cnt_btn">MOVIE<span><img src="<$mt:BlogRelativeURL$>img/top/icon_movie.png"
+                  alt="アイコン:動画再生"></span></div>
+          </div>
+          <h1 class="cnt_text"><span>生死不二の福徳と栄光をしのぶ安らぎの場</span>創価学会の<br class="sp">
+            墓地公園・納骨堂</h1>
+          <!-- END  .video -->
+        </div>
+        <!-- END  .contents_in -->
+      </div>
+      <!-- END  .cnt_area01 -->
+    </section>
+    <section class="cnt_area02">
+      <div class="contents_in">
+        <div class="h2_btn">
+          <h2>お知らせ</h2>
+
+          <div class="more_btn sp"><a href="<$mt:BlogRelativeURL$>news/"><span>もっと見る</span></a></div>
+        </div>
+        <!-- <mt:entries include_blogs="all" lastn="3"> -->
+          <div class="cnt_box"> <a href="<$mt:EntryPermalink$>" terget="blank">
+              <div class="cnt_box_in">
+                <div class="flex_box">
+                  <div class="cnt_date">
+                    <$MTDate format="%Y.%m.%d" $>
+                  </div>
+                  <div class="cnt_category">
+                    <$mt:CustomFieldValue identifier="shortened_name" $>
+                  </div>
+                </div>
+                <div class="title">
+                  <$mt:EntryTitle$>
+                </div>
+              </div>
+            </a> </div>
+        </mt:entries>
+        <div class="more_btn_out pc">
+          <div class="more_btn"><a href="<$mt:BlogRelativeURL$>news/"><span>もっと見る</span></a></div>
+        </div>
+        <!-- END  .contents_in -->
+      </div>
+      <!-- END  .cnt_area02 -->
+    </section>
+    <section class="cnt_area03">
+      <div class="contents_in">
+        <h2>墓地・納骨堂の種類</h2>
+        <div class="cnt_text">創価学会の墓地公園には、「恒久性・平等性・明るさ」を基調とした３種類の納骨施設があります。</div>
+        <div class="flex_box_big">
+          <div class="cnt_box">
+            <div class="flex_box_sm"><span>墓地</span>
+              <div class="cnt_img"><img src="<$mt:BlogRelativeURL$>img/top/pic02_top_01.png" alt="画像:各地の墓園（墓所）"></div>
+            </div>
+            <p>芝生墓所です。墓石の大きさは全て同一のみかげ石となっており、1区画（約4㎡）を末永くお使いいただけます。</p>
+            <!-- END  .cnt_box -->
+          </div>
+          <div class="cnt_box">
+            <div class="flex_box_sm"><span>長期収蔵型納骨堂</span>
+              <div class="cnt_img"><img src="<$mt:BlogRelativeURL$>img/top/pic03_top.png" alt="画像:長期収蔵型納骨堂"></div>
+            </div>
+            <p>
+              立体型墓地ともいえる室内型納骨施設です。１区画を20年間お使いいただけます。使用期間中は、納骨・ご遺骨の引き取り・納骨施設の前での参拝が可能です。使用期間満了後は、当会が併設の永久収蔵納骨室に移動します。（使用期間35年の受付は終了しました）
+            </p>
+            <!-- END  .cnt_box -->
+          </div>
+          <div class="cnt_box">
+            <div class="flex_box_sm"><span>永久収蔵納骨堂</span>
+              <div class="cnt_img"><img src="<$mt:BlogRelativeURL$>img/top/pic04_top.png" alt="画像:永久収蔵納骨堂"></div>
+            </div>
+            <p>合葬式の納骨施設です。骨壺ごとに収蔵し、ご遺骨を当会で永久にお預かりします（納骨後のお引き取り・対面参拝はできません）。ご遺骨を安心かつ安定して保管できる収蔵施設です。</p>
+            <!-- END  .cnt_box -->
+          </div>
+          <!-- END  .flex_box_big -->
+        </div>
+
+
+        <div id="search" class="flex_box flex_box01">
+          <h2>墓地・納骨堂を探す</h2>
+          <div class="btn"><a href=""><span>一覧を見る</span></a></div>
+          <!-- END  .flex_box01 -->
+        </div>
+
+        <div class="cnt_text02">種類で探す</div>
+        <div class="flex_box flex_box02">
+          <div class="cnt_box">
+            <!-- <span class="no_data"><img src="<$mt:BlogRelativeURL$>img/top/icon01_triangle.png" alt="アイコン:三角">申込受付中施設はありません</span> -->
+            <div class="btn_big btn_big_kinds"><span>墓地</span></div>
+          </div>
+
+          <div class="popup">
+            <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+            <div class="modal_bg"></div>
+            <div class="contents_in">
+              <div class="cnt_in">
+                <div class="title"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_check.png"
+                      alt="アイコン:チェック"></span>墓地</div>
+
+                <div class="icon_box">
+                  <div class="cnt_text icon_box_title">アイコンの説明</div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup01.png"
+                          alt=""></span>…墓地</div>
+                    <div class="cnt_text"><span>色付き</span>…申込受付中</div>
+                  </div>
+                </div>
+                <div class="flex_box contents">
+                  <mt:Blogs
+                    include_blogs="memorial_park_01,memorial_park_03,memorial_park_04,memorial_park_05,memorial_park_06,memorial_park_07,memorial_park_08,memorial_park_10,memorial_park_12,memorial_park_13,memorial_park_15,memorial_park_16,memorial_park_17,memorial_park_19,memorial_park_20">
+                    <a href="<$mt:BlogURL$>">
+                      <div class="cnt_text cnt_text_wrapper">
+                        <div class="cnt_parts">
+                          <div class="cnt_icon">
+                            <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_bochi"><span
+                                class="bochi gr"></span>
+                              <mt:Else><span class="bochi"></span>
+                            </mt:If>
+                          </div>
+                          <$mt:CustomFieldValue identifier="name_bochi" $>
+                        </div>
+                        <div class="cnt_parts">
+                          （<$mt:CustomFieldValue identifier="prefectures" $>）
+                        </div>
+                      </div>
+                    </a>
+                  </mt:Blogs>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END  .popup -->
+
+          <div class="cnt_box">
+            <!-- <span><img src="<$mt:BlogRelativeURL$>img/top/icon02_triangle.png" alt="アイコン:三角">全て申込受付中</span> -->
+            <div class="btn_big btn_big_kinds"><span>長期収蔵型納骨堂</span></div>
+          </div>
+
+          <div class="popup">
+            <div class="modal_bg"></div>
+            <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+            <div class="contents_in">
+              <div class="cnt_in">
+                <div class="title"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_check.png"
+                      alt="アイコン:チェック"></span>長期収蔵型納骨堂</div>
+                <div class="icon_box">
+                  <div class="cnt_text icon_box_title">アイコンの説明</div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup02.png"
+                          alt=""></span>…長期収納型納骨堂</div>
+                    <div class="cnt_text"><span>色付き</span>…申込受付中</div>
+                  </div>
+                </div>
+                <div class="flex_box contents">
+                  <mt:Blogs
+                    include_blogs="memorial_park_02,memorial_park_06,memorial_park_07,memorial_park_10,memorial_park_14,memorial_park_18">
+                    <a href="<$mt:BlogURL$>">
+                      <div class="cnt_text cnt_text_wrapper">
+                        <div class="cnt_parts">
+                          <div class="cnt_icon">
+                            <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_chouki"><span
+                                class="chouki gr"></span>
+                              <mt:Else><span class="chouki"></span>
+                            </mt:If>
+                          </div>
+                          <$mt:CustomFieldValue identifier="name_chouki" $>
+                        </div>
+                        <div class="cnt_parts">
+                          （<$mt:CustomFieldValue identifier="prefectures" $>）
+                        </div>
+                      </div>
+                    </a>
+                  </mt:Blogs>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END  .popup -->
+
+          <div class="cnt_box">
+            <!-- <span><img src="<$mt:BlogRelativeURL$>img/top/icon02_triangle.png" alt="アイコン:三角">全て申込受付中</span> -->
+            <div class="btn_big btn_big_kinds"><span>永久収蔵納骨堂</span></div>
+          </div>
+
+          <div class="popup">
+            <div class="modal_bg"></div>
+            <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+            <div class="contents_in">
+              <div class="cnt_in">
+                <div class="title"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_check.png"
+                      alt="アイコン:チェック"></span>永久収蔵納骨堂</div>
+                <div class="icon_box">
+                  <div class="cnt_text icon_box_title">アイコンの説明</div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup03.png"
+                          alt=""></span>…永久収蔵納骨堂</div>
+                    <div class="cnt_text"><span>色付き</span>…申込受付中</div>
+                  </div>
+                </div>
+                <div class="flex_box contents">
+                  <mt:Blogs
+                    include_blogs="memorial_park_01,memorial_park_02,memorial_park_03,memorial_park_04,memorial_park_05,memorial_park_06,memorial_park_07,memorial_park_09,memorial_park_10,memorial_park_11,memorial_park_15,memorial_park_16,memorial_park_17,memorial_park_18,memorial_park_19,memorial_park_20">
+                    <a href="<$mt:BlogURL$>">
+                      <div class="cnt_text cnt_text_wrapper">
+                        <div class="cnt_parts">
+                          <div class="cnt_icon">
+                            <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_eikyu"><span
+                                class="eikyu gr"></span>
+                              <mt:Else><span class="eikyu"></span>
+                            </mt:If>
+                          </div>
+                          <$mt:CustomFieldValue identifier="name_eikyu" $>
+                        </div>
+                        <div class="cnt_parts">
+                          （<$mt:CustomFieldValue identifier="prefectures" $>）
+                        </div>
+                      </div>
+                    </a>
+                  </mt:Blogs>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END  .popup -->
+
+
+
+          <!-- END  .flex_box02 -->
+        </div>
+        <div class="cnt_text03">場所で探す</div>
+        <div class="flex_box flex_box03">
+          <div class="btn_big btn_big_place"><span>北海道・東北</span></div>
+
+          <div class="popup">
+            <div class="modal_bg"></div>
+            <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+            <div class="contents_in">
+              <div class="cnt_in">
+                <div class="title"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_check.png"
+                      alt="アイコン:チェック"></span>北海道・東北</div>
+                <div class="icon_box">
+                  <div class="cnt_text icon_box_title">アイコンの説明</div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup01.png"
+                          alt=""></span>…墓地</div>
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup02.png"
+                          alt=""></span>…長期収納型納骨堂</div>
+                  </div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup03.png"
+                          alt=""></span>…永久収蔵納骨堂</div>
+                    <div class="cnt_text"><span>色付き</span>…申込受付中</div>
+                  </div>
+                </div>
+                <div class="flex_box contents">
+                  <mt:Blogs include_blogs="memorial_park_01,memorial_park_02,memorial_park_03,memorial_park_04">
+                    <a href="<$mt:BlogURL$>">
+                      <div class="cnt_text cnt_text_wrapper">
+                        <div class="cnt_parts">
+                          <div class="cnt_icon">
+                            <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_bochi"><span
+                                    class="bochi gr"></span>
+                                  <mt:Else><span class="bochi"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_chouki"><span
+                                    class="chouki gr"></span>
+                                  <mt:Else><span class="chouki"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_eikyu"><span
+                                    class="eikyu gr"></span>
+                                  <mt:Else><span class="eikyu"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                          </div>
+                          <mt:SetVar name="park_name" value="" />
+                          <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_bochi">
+                              <$mt:CustomFieldValue identifier="name_bochi" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_chouki">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_chouki" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_eikyu">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_eikyu" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <div>
+                            <$mt:GetVar name="park_name" $>
+                          </div>
+                        </div>
+                        <div class="cnt_parts">
+                          （<$mt:CustomFieldValue identifier="prefectures" $>）
+                        </div>
+                      </div>
+                    </a>
+                  </mt:Blogs>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END  .popup -->
+
+          <div class="btn_big btn_big_place"><span>関東・東海</span></div>
+
+          <div class="popup">
+            <div class="modal_bg"></div>
+            <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+            <div class="contents_in">
+              <div class="cnt_in">
+                <div class="title"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_check.png"
+                      alt="アイコン:チェック"></span>関東・東海</div>
+                <div class="icon_box">
+                  <div class="cnt_text icon_box_title">アイコンの説明</div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup01.png"
+                          alt=""></span>…墓地</div>
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup02.png"
+                          alt=""></span>…長期収納型納骨堂</div>
+                  </div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup03.png"
+                          alt=""></span>…永久収蔵納骨堂</div>
+                    <div class="cnt_text"><span>色付き</span>…申込受付中</div>
+                  </div>
+                </div>
+                <div class="flex_box contents">
+                  <mt:Blogs include_blogs="memorial_park_05,memorial_park_06,memorial_park_07">
+                    <a href="<$mt:BlogURL$>">
+                      <div class="cnt_text cnt_text_wrapper">
+                        <div class="cnt_parts">
+                          <div class="cnt_icon">
+                            <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_bochi"><span
+                                    class="bochi gr"></span>
+                                  <mt:Else><span class="bochi"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_chouki"><span
+                                    class="chouki gr"></span>
+                                  <mt:Else><span class="chouki"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_eikyu"><span
+                                    class="eikyu gr"></span>
+                                  <mt:Else><span class="eikyu"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                          </div>
+                          <mt:SetVar name="park_name" value="" />
+                          <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_bochi">
+                              <$mt:CustomFieldValue identifier="name_bochi" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_chouki">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_chouki" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_eikyu">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_eikyu" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <div>
+                            <$mt:GetVar name="park_name" $>
+                          </div>
+  
+                        </div>
+                        <div class="cnt_parts">
+                          （<$mt:CustomFieldValue identifier="prefectures" $>）
+                        </div>
+                      </div>
+                    </a>
+                  </mt:Blogs>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END  .popup -->
+
+          <div class="btn_big btn_big_place"><span>中部・信越・北陸</span></div>
+
+          <div class="popup">
+            <div class="modal_bg"></div>
+            <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+            <div class="contents_in">
+              <div class="cnt_in">
+                <div class="title"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_check.png"
+                      alt="アイコン:チェック"></span>中部・信越・北陸</div>
+                <div class="icon_box">
+                  <div class="cnt_text icon_box_title">アイコンの説明</div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup01.png"
+                          alt=""></span>…墓地</div>
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup02.png"
+                          alt=""></span>…長期収納型納骨堂</div>
+                  </div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup03.png"
+                          alt=""></span>…永久収蔵納骨堂</div>
+                    <div class="cnt_text"><span>色付き</span>…申込受付中</div>
+                  </div>
+                </div>
+                <div class="flex_box contents">
+                  <mt:Blogs include_blogs="memorial_park_08,memorial_park_09,memorial_park_10">
+                    <a href="<$mt:BlogURL$>">
+                      <div class="cnt_text cnt_text_wrapper">
+                        <div class="cnt_parts">
+                          <div class="cnt_icon">
+                            <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_bochi"><span
+                                    class="bochi gr"></span>
+                                  <mt:Else><span class="bochi"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_chouki"><span
+                                    class="chouki gr"></span>
+                                  <mt:Else><span class="chouki"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_eikyu"><span
+                                    class="eikyu gr"></span>
+                                  <mt:Else><span class="eikyu"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                          </div>
+                          <mt:SetVar name="park_name" value="" />
+                          <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_bochi">
+                              <$mt:CustomFieldValue identifier="name_bochi" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_chouki">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_chouki" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_eikyu">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_eikyu" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <div>
+                            <$mt:GetVar name="park_name" $>
+                          </div>
+                        </div>
+                        <div class="cnt_parts">
+                          （<$mt:CustomFieldValue identifier="prefectures" $>）
+                        </div>
+                      </div>
+                    </a>
+                  </mt:Blogs>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END  .popup -->
+
+          <div class="btn_big btn_big_place"><span>関西</span></div>
+
+          <div class="popup">
+            <div class="modal_bg"></div>
+            <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+            <div class="contents_in">
+              <div class="cnt_in">
+                <div class="title"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_check.png"
+                      alt="アイコン:チェック"></span>関西</div>
+                <div class="icon_box">
+                  <div class="cnt_text icon_box_title">アイコンの説明</div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup01.png"
+                          alt=""></span>…墓地</div>
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup02.png"
+                          alt=""></span>…長期収納型納骨堂</div>
+                  </div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup03.png"
+                          alt=""></span>…永久収蔵納骨堂</div>
+                    <div class="cnt_text"><span>色付き</span>…申込受付中</div>
+                  </div>
+                </div>
+                <div class="flex_box contents">
+                  <mt:Blogs include_blogs="memorial_park_11,memorial_park_12,memorial_park_13,memorial_park_14">
+                    <a href="<$mt:BlogURL$>">
+                      <div class="cnt_text cnt_text_wrapper">
+                        <div class="cnt_parts">
+                          <div class="cnt_icon">
+                            <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_bochi"><span
+                                    class="bochi gr"></span>
+                                  <mt:Else><span class="bochi"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_chouki"><span
+                                    class="chouki gr"></span>
+                                  <mt:Else><span class="chouki"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_eikyu"><span
+                                    class="eikyu gr"></span>
+                                  <mt:Else><span class="eikyu"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                          </div>
+                          <mt:SetVar name="park_name" value="" />
+                          <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_bochi">
+                              <$mt:CustomFieldValue identifier="name_bochi" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_chouki">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_chouki" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_eikyu">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_eikyu" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <div>
+                            <$mt:GetVar name="park_name" $>
+                          </div>
+                        </div>
+                        <div class="cnt_parts">
+                          （<$mt:CustomFieldValue identifier="prefectures" $>）
+                        </div>
+                      </div>
+                    </a>
+                  </mt:Blogs>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END  .popup -->
+
+          <div class="btn_big btn_big_place"><span>中国・四国</span></div>
+
+          <div class="popup">
+            <div class="modal_bg"></div>
+            <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+            <div class="contents_in">
+              <div class="cnt_in">
+                <div class="title"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_check.png"
+                      alt="アイコン:チェック"></span>中国・四国</div>
+                <div class="icon_box">
+                  <div class="cnt_text icon_box_title">アイコンの説明</div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup01.png"
+                          alt=""></span>…墓地</div>
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup02.png"
+                          alt=""></span>…長期収納型納骨堂</div>
+                  </div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup03.png"
+                          alt=""></span>…永久収蔵納骨堂</div>
+                    <div class="cnt_text"><span>色付き</span>…申込受付中</div>
+                  </div>
+                </div>
+                <div class="flex_box contents">
+                  <mt:Blogs include_blogs="memorial_park_15,memorial_park_16,memorial_park_17">
+                    <a href="<$mt:BlogURL$>">
+                      <div class="cnt_text cnt_text_wrapper">
+                        <div class="cnt_parts">
+                          <div class="cnt_icon">
+                            <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_bochi"><span
+                                    class="bochi gr"></span>
+                                  <mt:Else><span class="bochi"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_chouki"><span
+                                    class="chouki gr"></span>
+                                  <mt:Else><span class="chouki"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_eikyu"><span
+                                    class="eikyu gr"></span>
+                                  <mt:Else><span class="eikyu"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                          </div>
+                          <mt:SetVar name="park_name" value="" />
+                          <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_bochi">
+                              <$mt:CustomFieldValue identifier="name_bochi" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_chouki">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_chouki" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_eikyu">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_eikyu" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <div>
+                            <$mt:GetVar name="park_name" $>
+                          </div>
+                        </div>
+                        <div class="cnt_parts">
+                          （<$mt:CustomFieldValue identifier="prefectures" $>）
+                        </div>
+                      </div>
+                    </a>
+                  </mt:Blogs>
+                </div>
+              </div>
+              <!-- END  .popup -->
+            </div>
+          </div>
+
+          <div class="btn_big btn_big_place"><span>九州・沖縄</span></div>
+
+          <div class="popup">
+            <div class="modal_bg"></div>
+            <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+            <div class="contents_in">
+              <div class="cnt_in">
+                <div class="title"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_check.png"
+                      alt="アイコン:チェック"></span>九州・沖縄</div>
+                <div class="icon_box">
+                  <div class="cnt_text icon_box_title">アイコンの説明</div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup01.png"
+                          alt=""></span>…墓地</div>
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup02.png"
+                          alt=""></span>…長期収納型納骨堂</div>
+                  </div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup03.png"
+                          alt=""></span>…永久収蔵納骨堂</div>
+                    <div class="cnt_text"><span>色付き</span>…申込受付中</div>
+                  </div>
+                </div>
+                <div class="flex_box contents">
+                  <mt:Blogs include_blogs="memorial_park_18,memorial_park_19,memorial_park_20">
+                    <a href="<$mt:BlogURL$>">
+                      <div class="cnt_text cnt_text_wrapper">
+                        <div class="cnt_parts">
+                          <div class="cnt_icon">
+                            <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_bochi"><span
+                                    class="bochi gr"></span>
+                                  <mt:Else><span class="bochi"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_chouki"><span
+                                    class="chouki gr"></span>
+                                  <mt:Else><span class="chouki"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_eikyu"><span
+                                    class="eikyu gr"></span>
+                                  <mt:Else><span class="eikyu"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                          </div>
+                          <mt:SetVar name="park_name" value="" />
+                          <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_bochi">
+                              <$mt:CustomFieldValue identifier="name_bochi" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_chouki">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_chouki" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_eikyu">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_eikyu" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <div>
+                            <$mt:GetVar name="park_name" $>
+                          </div>
+                        </div>
+                        <div class="cnt_parts">
+                          （<$mt:CustomFieldValue identifier="prefectures" $>）
+                        </div>
+                      </div>
+                    </a>
+                  </mt:Blogs>
+                </div>
+              </div>
+              <!-- END  .popup -->
+            </div>
+          </div>
+
+          <div class="btn_big btn_big_place"><span>全国</span></div>
+
+          <div class="popup">
+            <div class="modal_bg"></div>
+            <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+            <div class="contents_in">
+              <div class="cnt_in">
+                <div class="title"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_check.png"
+                      alt="アイコン:チェック"></span>全国</div>
+                <div class="icon_box">
+                  <div class="cnt_text icon_box_title">アイコンの説明</div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup01.png"
+                          alt=""></span>…墓地</div>
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup02.png"
+                          alt=""></span>…長期収納型納骨堂</div>
+                  </div>
+                  <div class="flex_box">
+                    <div class="cnt_text"><span><img src="<$mt:BlogRelativeURL$>img/top/icon_popup03.png"
+                          alt=""></span>…永久収蔵納骨堂</div>
+                    <div class="cnt_text"><span>色付き</span>…申込受付中</div>
+                  </div>
+                </div>
+                <div class="flex_box contents">
+                  <mt:Blogs
+                    include_blogs="memorial_park_01,memorial_park_02,memorial_park_03,memorial_park_04,memorial_park_05,memorial_park_06,memorial_park_07,memorial_park_08,memorial_park_09,memorial_park_10,memorial_park_11,memorial_park_12,memorial_park_13,memorial_park_14,memorial_park_15,memorial_park_16,memorial_park_17,memorial_park_18,memorial_park_19,memorial_park_20">
+                    <a href="<$mt:BlogURL$>">
+                      <div class="cnt_text cnt_text_wrapper">
+                        <div class="cnt_parts">
+                          <div class="cnt_icon">
+                            <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_bochi"><span
+                                    class="bochi gr"></span>
+                                  <mt:Else><span class="bochi"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_chouki"><span
+                                    class="chouki gr"></span>
+                                  <mt:Else><span class="chouki"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                            <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                              <div class="cnt_icon">
+                                <mt:If tag="CustomFieldValue" identifier="now_accepting_applications_eikyu"><span
+                                    class="eikyu gr"></span>
+                                  <mt:Else><span class="eikyu"></span>
+                                </mt:If>
+                              </div>
+                            </mt:If>
+                          </div>
+                          <mt:SetVar name="park_name" value="" />
+                          <mt:If tag="CustomFieldValue" identifier="name_bochi">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_bochi">
+                              <$mt:CustomFieldValue identifier="name_bochi" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_chouki">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_chouki">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_chouki" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <mt:If tag="CustomFieldValue" identifier="name_eikyu">
+                            <mt:SetVarBlock name="park_name" append="1" value="$name_eikyu">
+                              <mt:If name="park_name"><br></mt:If>
+                              <$mt:CustomFieldValue identifier="name_eikyu" $>
+                            </mt:SetVarBlock>
+                          </mt:If>
+                          <div>
+                            <$mt:GetVar name="park_name" $>
+                          </div>
+                        </div>
+                        <div class="cnt_parts">
+                          （<$mt:CustomFieldValue identifier="prefectures" $>）
+                        </div>
+                      </div>
+                    </a>
+                  </mt:Blogs>
+                </div>
+
+                <!--<div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>-->
+              </div>
+              <!-- END  .popup -->
+            </div>
+          </div>
+
+          <!-- END  .flex_box03 -->
+        </div>
+        <!-- END  .contents_in -->
+      </div>
+      <!-- END  .cnt_area03 -->
+    </section>
+
+    <section class="cnt_area05 procedure_area">
+      <div class="contents_in">
+        <div class="contents_in_sm">
+          <h2>各種手続き</h2>
+          <div class="flex_box">
+
+            <div class="item_box">
+
+              <div class="tin_box">
+                <span>納骨手続き（墓地）</span>
+                <a href="<$mt:BlogRelativeURL$>procedure/cemetery/"></a>
+              </div>
+
+              <div class="tin_box">
+                <span>納骨手続き<br class="pc">（長期収蔵型納骨堂）</span>
+                <a href="<$mt:BlogRelativeURL$>procedure/ossuary01/"></a>
+              </div>
+
+              <div class="tin_box">
+                <span>納骨手続き<br class="pc">（永久収蔵納骨堂）</span>
+                <a href="<$mt:BlogRelativeURL$>procedure/ossuary02/"></a>
+              </div>
+
+            </div>
+
+            <div class="cnt_box cnt_box02">
+              <a href="<$mt:BlogRelativeURL$>procedure/reburial/">
+                <div class="cnt_text01 pc"><span>改葬の手続き</span></div>
+                <div class="cnt_img"><img src="<$mt:BlogRelativeURL$>common/img/icon_flow01.png" alt="アイコン:改葬の手続きについて">
+                </div>
+                <div class="block">
+                  <div class="cnt_text01 sp"><span>改葬の手続き</span></div>
+                  <div class="cnt_text02">ご遺骨を移動する<br>「改葬」について</div>
+                </div>
+              </a>
+              <!-- END  .cnt_box -->
+            </div>
+            <div class="cnt_box">
+              <a href="<$mt:BlogRelativeURL$>other-procedure/">
+                <div class="cnt_text01 pc"><span>その他の手続き</span></div>
+                <div class="cnt_img"><img src="<$mt:BlogRelativeURL$>common/img/icon_flow02.png" alt="アイコン:その他の手続きについて">
+                </div>
+                <div class="block">
+                  <div class="cnt_text01 sp"><span>その他の手続き</span></div>
+                  <div class="cnt_text02">身上変更や承継などの<br>手続きについて</div>
+                </div>
+              </a>
+              <!-- END  .cnt_box -->
+            </div>
+            <!-- END  .flex_box -->
+          </div>
+        </div>
+        <!-- END  .contents_in -->
+      </div>
+      <!-- END  .cnt_area05 -->
+    </section>
+
+    <section class="cnt_area04">
+      <div class="contents_in">
+        <h2>よくある質問　Q＆A</h2>
+        <dl>
+          <dt>創価学会の会員でなくても申し込みはできますか</dt>
+          <dd>会員またはその家族の方からのお申し込みを受け付けております。<br>
+            詳しくは各墓地公園・納骨堂事務局にお問い合わせください。</dd>
+        </dl>
+        <dl>
+          <dt>他府県から申し込みできますか</dt>
+          <dd>お申し込み頂けます。
+            遠方にお住まいであれば、申込書は郵送でも受け付けておりますが、納骨の際は、直接墓地公園または納骨堂にお越し頂きます。<br>
+            長期または永代にわたるご利用となりますので、事前にぜひご見学頂くことをお勧めします。</dd>
+        </dl>
+        <dl>
+          <dt>申し込み前に見学はできますか</dt>
+          <dd>どなたでもご自由に見学頂けます。<br>
+            ただし、休園(館)日・開園(館)時間等にご注意ください。</dd>
+        </dl>
+        <dl>
+          <dt>墓石の大きさやデザインは同じですか</dt>
+          <dd>仏法の真の平等観を基に、全て同じ形状・大きさとなっております。</dd>
+        </dl>
+        <div class="more_btn_out02">
+          <div class="more_btn"><a href="<$mt:BlogRelativeURL$>faq/"><span>もっと見る</span></a></div>
+        </div>
+        <!-- END  .contents_in -->
+      </div>
+      <!-- END  .cnt_area04 -->
+    </section>
+
+    <mt:Ignore>
+      使用していないようなので一旦コメントアウト
+      <!--popup-->
+      <div class="movie sp">
+        <div class="modal_bg"></div>
+        <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+        <div class="contents_in">
+          <div class="video">
+            <!--<img src="<$mt:BlogRelativeURL$>img/top/pic01_top.png" alt="メインビジュアル">-->
+            <!--<video src="<$mt:BlogRelativeURL$>img/top/video02.mp4" autoplay muted playsinlin></video>-->
+          </div>
+
+        </div>
+
+      </div>
+    </mt:Ignore>
+
+    <!-- END  #top -->
+  </div>
+  <$mt:Include module="footer" $>

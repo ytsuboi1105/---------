@@ -1,0 +1,279 @@
+<$mt:Include module="header" $>
+<div id="pk" class="pk01">
+  <!-- それぞれのページに固有のIDをつけてください。 -->
+
+
+  <section class="cnt_area01">
+    <div class="breadcrumb">
+      <div class="contents_in">
+        <ul>
+          <li><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>">墓地公園・納骨堂のご案内</a></li>
+          <li><$mt:BlogName$></li>
+        </ul>
+      </div>
+      <!-- END  .breadcrumb -->
+    </div>
+    <div class="contents_in">
+      <h1 class="main_title">関西白浜平和納骨堂</h1>
+      <!-- END  .contents_in -->
+    </div>
+    <div class="contents_in contents_in_slide">
+      <ul class="slider">
+        <mt:Assets field:display_topslider="1" sort_by="field:order_topslider" sort_order="ascend">
+          <li><img alt="<$mt:AssetDescription$>" src="<$mt:AssetURL$>" /></li>
+        </mt:Assets>
+      </ul>
+      <!-- END  .contents_in -->
+    </div>
+    <!-- END  .cnt_area01 -->
+  </section>
+
+  <div class="container_out_f">
+    <div class="container_out">
+      <div class="container">
+
+
+        <section class="cnt_area02">
+          <div class="contents_column left">
+
+            <div class="column_01">
+              <div class="h2_btn">
+                <h2>お知らせ</h2>
+                <div class="more_btn sp"><a href="<$mt:BlogRelativeURL$>information/"><span>もっと見る</span></a></div>
+              </div>
+              <div class="news_box">
+                <mt:Entries category="お知らせ" lastn="3">
+                  <div class="cnt_box"> <a href="<$mt:EntryPermalink$>">
+                      <div class="cnt_box_in">
+                        <div class="flex_box">
+                          <div class="cnt_date">
+                            <$MTDate format="%Y.%m.%d" $>
+                          </div>
+                        </div>
+                        <div class="title">
+                          <$mt:EntryTitle$>
+                        </div>
+                      </div>
+                    </a> </div>
+                </mt:Entries>
+              </div>
+              <div class="more_btn_out pc">
+                <div class="more_btn"><a href="<$mt:BlogRelativeURL$>information/"><span>もっと見る</span></a></div>
+              </div>
+              <!-- END  .column_01 -->
+            </div>
+
+
+            <div class="column_02" id="b_info">
+              <h2>基本情報</h2>
+
+              <dl class="access_dl">
+                <dt>住所</dt>
+                <dd>〒649-2211 和歌山県西牟婁郡白浜町 2927-285<br>関西研修道場内
+                  <div class="more_btn_out">
+                    <div class="more_btn"><a href="https://goo.gl/maps/1Q45Gz5KeLGf1ir59"
+                        target="_blank"><span>MAPで開く</span></a></div>
+                  </div>
+                </dd>
+              </dl>
+
+              <dl class="tel_dl">
+                <dt>電話番号</dt>
+                <dd>0739-42-5910
+                  <div class="more_btn_out">
+                    <div class="more_btn"><a href="tel:0739425910"><span>電話する</span></a></div>
+                  </div>
+                </dd>
+              </dl>
+
+              <dl>
+                <dt>FAX</dt>
+                <dd>0739-42-5912</dd>
+              </dl>
+              <dl>
+                <dt>開園時間</dt>
+                <dd>午前10:00～午後4:00</dd>
+              </dl>
+              <dl>
+                <dt>休園日</dt>
+                <dd>毎週火曜日（お盆・お彼岸・祝日を除く）/dd>
+              </dl>
+
+              <dl>
+                <dt>休園期間</dt>
+                <dd>毎年12月28日～1月4日<br>
+                  ※1月1日・2日は入館できますが、納骨業務は行っておりません。<br>
+                  その他の休館日・休館期間は入館できません。</dd>
+              </dl>
+              <!-- END  .column_02 -->
+            </div>
+
+
+            <div class="column_03" id="bosyo">
+              <h2>墓地・納骨堂のご案内</h2>
+
+              <div class="tab_wrap">
+                <input id="tab1" type="radio" name="tab_btn" checked>
+
+                <div class="tab_area">
+                  <label class="tab1_label" for="tab1">長期収蔵型<br class="sp">納骨堂</label>
+                </div>
+
+                <div class="panel_area">
+                  <div id="panel1" class="tab_panel panel_area_in">
+
+                    <h3>関西白浜平和納骨堂</h3>
+                    <div class="flex_box flex_box01">
+                      <div class="cnt_box cnt_box01">
+                        <div class="cnt_img"> <img src="<$mt:BlogRelativeURL$>/img/pik01_pk01.png" alt="画像:関西白浜平和納骨堂">
+                        </div>
+                        <!-- 左 -->
+                      </div>
+
+                      <div class="cnt_box cnt_box02">
+                        <div class="cnt_text">
+                          <p>
+                            立体型墓地ともいえる室内型納骨施設です。１区画を20年間お使いいただけます。<br><br>
+                            4寸骨壺を6個収蔵することができます。<br>
+                            （骨壺に入れて収蔵します）<br>
+                            使用期間は20年間です。<br>
+                            ※使用期間中はご遺骨のお引き取りが可能です。<br>
+                            ※使用期間満了後は当会が併設の永久収蔵納骨室に移動します。<br>
+                            （使用期間35年の受付は終了しました）
+                          </p>
+                        </div>
+                        <!-- 右 -->
+                      </div>
+                      <!-- flex_boxおわり -->
+                    </div>
+
+                    <div class="block_box block_box01">
+                      <div class="cnt_title cnt_title01">納骨・参拝</div>
+
+                      <dl>
+                        <dt>納骨について</dt>
+                        <dd>
+                          <p>係員立ち会いのもと、ご自身で納骨していただきます。</p>
+                          <div class="link_btn">
+                            <p>納骨手続き<br class="sp">（長期収蔵型納骨堂）</p>
+                            <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary01/"></a>
+                          </div>
+                        </dd>
+                      </dl>
+
+                      <dl>
+                        <dt>参拝について</dt>
+                        <dd>
+                          <ul>
+                            <li>参拝は直接対面方式となります（ただし、閉扉での参拝となります）。</li>
+                          </ul>
+                        </dd>
+                      </dl>
+
+                      <dl>
+                        <dt>法要</dt>
+                        <dd>
+                          <p>新型コロナウイルス感染防止のため、現在勤行法要は行っておりません。</p>
+                        </dd>
+                      </dl>
+
+                    </div>
+
+
+                    <div class="block_box block_box02">
+                      <div class="cnt_title cnt_title01">購入について</div>
+                      <dl>
+                        <dt>募集状況</dt>
+                        <dd>
+                          <p>申込予約受付中<br>
+                            事前の申込希望はTELまたはFAXにて受け付けております。（FAX：0739-42-5912）<br>
+                            詳細は事務局にお問い合わせください。</p>
+                          <div class="link_btn">
+                            <p>FAX用書類はこちら</p>
+                            <a href="<$mt:BlogRelativeURL$>img/pdf/kansaishirahama_chouki_04.pdf"
+                              download="<$mt:BlogRelativeURL$>img/kansaishirahama_chouki_04.pdf"></a>
+                          </div>後日、「申込書類」を郵送いたします。
+                          <p>※価格・使用開始までの期間につきましては、直接お問い合わせください。</p>
+                        </dd>
+                      </dl>
+                    </div>
+                    <!-- END  .panel_area_in -->
+                  </div>
+
+                </div>
+                <!--END .panel_area-->
+              </div>
+              <!--END .tab_wrap-->
+
+              <!-- END  .column_03 -->
+            </div>
+
+            <!-- END  .contents_column -->
+          </div>
+
+          <!-- END  .cnt_area02 -->
+        </section>
+
+        <$mt:Include module="side_nav" $>
+      </div>
+    </div>
+  </div>
+
+  <div class="column_04 procedure_area" id="procedure">
+    <div class="contents_in">
+      <div class="contents_in_sm">
+        <h2>各種手続き</h2>
+        <div class="flex_box">
+          <div class="item_box">
+
+            <div class="tin_box">
+              <span>納骨手続き（墓地）</span>
+              <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/cemetery/"></a>
+            </div>
+
+            <div class="tin_box">
+              <span>納骨手続き<br class="pc">（長期収蔵型納骨堂）</span>
+              <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary01/"></a>
+            </div>
+
+            <div class="tin_box">
+              <span>納骨手続き<br class="pc">（永久収蔵納骨堂）</span>
+              <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary02/"></a>
+            </div>
+
+          </div>
+
+          <div class="cnt_box cnt_box02">
+            <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/reburial/">
+              <div class="cnt_text01 pc"><span>改葬の手続き</span></div>
+              <div class="cnt_img"><img src="<$mt:Link template='メインページ' blog_id='memorial_park'$>common/img/icon_flow01.png" alt="アイコン:改葬の手続きについて">
+              </div>
+              <div class="block">
+                <div class="cnt_text01 sp"><span>改葬の手続き</span></div>
+                <div class="cnt_text02">ご遺骨を移動する<br>「改葬」について</div>
+              </div>
+            </a>
+            <!-- END  .cnt_box -->
+          </div>
+          <div class="cnt_box">
+            <a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>other_procedure/">
+              <div class="cnt_text01 pc"><span>その他の手続き</span></div>
+              <div class="cnt_img"><img src="<$mt:Link template='メインページ' blog_id='memorial_park'$>common/img/icon_flow02.png" alt="アイコン:その他の手続きについて">
+              </div>
+              <div class="block">
+                <div class="cnt_text01 sp"><span>その他の手続き</span></div>
+                <div class="cnt_text02">身上変更や承継などの<br>手続きについて</div>
+              </div>
+            </a>
+            <!-- END  .cnt_box -->
+          </div>
+          <!-- END  .flex_box -->
+        </div>
+      </div>
+      <!-- END  .contents_in -->
+    </div>
+  </div>
+
+  <!-- END  #pk -->
+</div>
+<$mt:Include module="footer" $>

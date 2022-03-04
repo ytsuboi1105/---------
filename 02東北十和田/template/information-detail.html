@@ -1,0 +1,76 @@
+<$mt:Include module="header" $>
+<main id="pk_info_detail" class="pk_secondary">
+
+  <!-- ぱんくず（ページ共通） -->
+  <section class="breadcrumb">
+    <div class="contents_in">
+      <ul>
+        <li><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>">墓地公園・納骨堂のご案内</a></li>
+        <li><a href="<$mt:BlogURL$>"><$mt:BlogName$></a></li>
+        <li><a href="<$mt:BlogRelativeURL$>information/">
+            <$mt:EntryCategory$>
+          </a></li>
+        <li><span>
+            <$mt:EntryTitle$>
+          </span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- タイトル（ページ共通） -->
+  <section class="under_page">
+    <div class="contents_in">
+      <div class="ttl_around_h1">
+        <h1>お知らせ</h1>
+      </div>
+    </div><!-- END  .contents_in -->
+  </section><!-- END  .under_page -->
+
+  <!--メインエリア-->
+  <section class="ctn-nd__main">
+    <div class="contents_in">
+      <div class="ctn-info_left">
+        <div class="ctn-nd__wrapper">
+          <div class="ctn-nd__ttl">
+            <span>
+              <$MTDate format="%Y.%m.%d" $>
+            </span>
+            <h2>
+              <$mt:EntryTitle$>
+            </h2>
+          </div>
+          <figure>
+            <mt:CustomFieldAsset identifier="news_img"><img src="<mt:AssetURL />"></mt:CustomFieldAsset>
+          </figure>
+          <p>
+            <$mt:EntryBody$>
+          </p>
+        </div>
+        <!--END .ctn-nd__wrapper-->
+  
+        <div class="nd-pager">
+          <ul>
+            <li class="nd-pager__pre">
+              <mt:EntryPrevious by_category="1"><a href="<$mt:EntryPermalink$>"><span></span>前の記事</a></mt:EntryPrevious>
+            </li>
+            <li class="nd-pager__next">
+              <mt:EntryNext by_category="1"><a href="<$mt:EntryPermalink$>"><span></span>次の記事</a></mt:EntryNext>
+            </li>
+          </ul>
+        </div>
+        <div class="backbtn"><a href="<$mt:BlogRelativeURL$>information/">一覧へ戻る</a></div>
+      </div>
+      <!--END .ctn-info_left-->
+    </div>
+
+    <!-----サイドメニューエリア--------->
+    <$mt:Include module="side_nav" $>
+
+
+  </section>
+  <!--END .ctn-nd-main-->
+  <!--END .ctn-n-main-->
+
+</main>
+<!--END #pk_info_detail-->
+<$mt:Include module="footer" $>
