@@ -1010,7 +1010,8 @@ max-width: none;
 }
 
 #pk .column_02 .more_btn_out {
-	width: 26.27%;
+	/* width: 26.27%; */
+	width: 9rem;
 	margin-left: 5.28%;
 }
 
@@ -2338,7 +2339,7 @@ max-width: none;
 	-ms-flex-align: center;
 	align-items: center;
 	position: relative;
-	font-size: 1.25vw;
+	font-size: 18px;
 	line-height: 1.7;
 	padding: 18px 31px;
 	transition: all 0.5s ease;
@@ -2373,7 +2374,7 @@ max-width: none;
 /*アコーディオンで現れるエリア*/
 #faq .box {
 	display: none; /*はじめは非表示*/
-	font-size: 1.11vw;
+	font-size: 17px;
 	line-height: 1.18;
 	margin: 0 3% 3% 3%;
 	padding: 0 3% 0 48px;

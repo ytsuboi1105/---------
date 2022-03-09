@@ -77,6 +77,10 @@ img.img-rounded {
 	border-radius: 10px;
 }
 
+strong {
+	font-weight: 700;
+}
+
 /*----------
 共通ページに使用する
 メインタイトル（h1）とその周り

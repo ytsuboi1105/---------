@@ -22,6 +22,10 @@
 
 @media only screen and (max-width:1024px) {
 
+	.pk_secondary + footer {
+		padding-bottom: 24vw;
+	}
+
 	/*----------
 	01.top
 	----------*/
@@ -1244,9 +1248,11 @@ width: 49.81%;
 	}
 
 	#news {
-		padding: 15px 0 0 0;
-		margin-top: 110px;
+		/* padding: 15px 0 0 0;
+		margin-top: 110px; */
 		background-color: #fff;
+		padding: 0;
+		margin-top: 16vw;
 	}
 
 	/******ctn-n-mainエリア;*********/
@@ -1255,7 +1261,8 @@ width: 49.81%;
 	}
 
 	#news .ctn-n-main .ctn-n-list .list-all-wrap .n-items .n-indiv {
-		padding: 20px 0;
+		/* padding: 20px 0; */
+		padding: 4vw 0;
 	}
 
 	#news .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a {
@@ -1266,37 +1273,98 @@ width: 49.81%;
 	}
 
 	#news .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-date {
-		font-size: 1.269vw;
+		font-size: 3.46666666666667vw;
 		margin-left: 0;
 	}
 
 	#news .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-ttl {
-		font-size: 1.56vw;
+		font-size: 3.73333333333333vw;
 		margin-left: 0;
 	}
 
 	#news .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-ttl::after {
-		top: 35px;
+		width: 1.86666666666667vw;
+		height: 1.86666666666667vw;
+		top: 9.33333333333333vw;
 	}
 
 	/*----------
 05.news_detail
 ----------*/
 	#news_detail {
-		margin-top: 100px;
-		padding: 0 0 71px 0;
+		/* margin-top: 100px;
+		padding: 0 0 71px 0; */
+		padding: 0 0 18.6666666666667vw 0;
+		margin: 16vw 0 0;
 	}
 
+	#news_detail .ctn-nd__main .ctn-nd__wrapper {
+		padding: 5.33333333333333vw 4vw;
+		font-size: 3.73333333333333vw;
+	}
 	#news_detail .ctn-nd__main .ctn-nd__wrapper figure {
-		margin: 20px auto;
+		/* margin: 20px auto; */
+		margin: 5.33333333333333vw auto;
 	}
 
 	#news_detail .ctn-nd__main .ctn-nd__wrapper .ctn-nd__ttl {
-		padding: 20px 0;
+		/* padding: 20px 0; */
+		padding: 4.8vw 0;
 	}
-
+	#news_detail .ctn-nd__main .ctn-nd__wrapper .ctn-nd__ttl span{
+		font-size: 3.73333333333333vw;
+		line-height: 1.7;
+	}
 	#news_detail .ctn-nd__main .ctn-nd__wrapper .ctn-nd__ttl h2 {
-		font-size: 2.34vw;
+		font-size: 5.33333333333333vw;
+		line-height: 1.4;
+	}
+	#news_detail .ctn-nd__main .ctn-nd__wrapper p {
+		font-size: 3.73333333333333vw;
+	}
+	#news_detail .ctn-nd__main .backbtn {
+		font-size: 3.46666666666667vw;
+	}
+	#news_detail .ctn-nd__main .backbtn a {
+		max-width: 48vw;
+		margin-top: 10.6666666666667vw;
+		padding: 3.2vw 5.33333333333333vw;
+	}
+	#news_detail .ctn-nd__main .backbtn a::after {
+		width: 1.71214121951vw;
+		height: 1.71214121951vw;
+		top: 4vw;
+		right: 4.8vw;
+	}
+	#news_detail .nd-pager {
+		margin: 5.33333333333333vw auto 0;
+	}
+	#news_detail .nd-pager ul .nd-pager__pre a,
+	#news_detail .nd-pager ul .nd-pager__next a {
+		font-size: 3.46666666666667vw;
+	}
+	#news_detail .nd-pager ul .nd-pager__pre a span,
+	#news_detail .nd-pager ul .nd-pager__next a span {
+		width: 8vw;
+		height: 8vw;
+	}
+	#news_detail .nd-pager ul .nd-pager__pre a span {
+		margin-right: 4vw;
+	}
+	#news_detail .nd-pager ul .nd-pager__next a span {
+		margin-left: 4vw;
+	}
+	#news_detail .nd-pager ul .nd-pager__pre a span::after,
+	#news_detail .nd-pager ul .nd-pager__next a span::after {
+		width: 1.86666666666667vw;
+		height: 1.86666666666667vw;
+		top: 2.93333333333333vw;
+	}
+	#news_detail .nd-pager ul .nd-pager__pre a span::after {
+		left: 3.2vw;
+	}
+	#news_detail .nd-pager ul .nd-pager__next a span::after {
+		left: 2.66666666666667vw;
 	}
 
 	/*----------
@@ -1460,30 +1528,38 @@ width: 49.81%;
 08.faq
 ----------*/
 	#faq {
-		margin: 110px 0 46px;
+		/* margin: 110px 0 46px; */
+		margin: 16vw 0 18.6666666666667vw;
 	}
 
 	#faq .title {
-		width: 94%;
-		font-size: 1.36vw;
+		/* width: 94%; */
+		font-size: 3.73333333333333vw;
 		line-height: 2;
 		padding: 10px 15px;
+		padding: 2.66666666666667vw 10.6666666666667vw 2.66666666666667vw 4vw;
 	}
 
 	#faq .title span {
-		font-size: 2.14vw;
+		font-size: 5.86666666666667vw;
+		margin-right: 2.66666666666667vw;
 	}
 
 	#faq .title::after {
-		width: 5px;
+		/* width: 5px;
 		height: 5px;
-		right: -2px;
+		right: -2px; */
+		width: 2.13333333333333vw;
+		height: 2.13333333333333vw;
+		right: 4vw;
 	}
 
 	#faq .box {
-		font-size: 1.26vw;
+		font-size: 3.46666666666667vw;
 		line-height: 1.7;
-		padding: 0 4% 0 40px;
+		/* padding: 0 4% 0 40px; */
+		padding: 0;
+		margin: 0 10.6666666666667vw 5.33333333333333vw 12vw;
 	}
 
 	/*----------
@@ -1909,9 +1985,7 @@ width: 49.81%;
 		background: #A0A0A0;
 		border-radius: 100px;
 	}
-}
 
-@media only screen and (max-width:1023px) {
 
 	/*----------
 	01.other_procedure（その他の手続き）
@@ -2116,7 +2190,8 @@ width: 49.81%;
 02.cemetery（納骨手続き（墓地））
 ----------*/
 	.cemetery {
-		margin-top: 9vh;
+		/* margin-top: 9vh; */
+		margin-top: 16vw;
 	}
 
 	.cemetery p,
@@ -2126,11 +2201,13 @@ width: 49.81%;
 	}
 
 	.cemetery .sec01 {
-		padding-bottom: 40px;
+		/* padding-bottom: 40px; */
+		padding-bottom: 10.6666666666667vw;
 	}
 
 	.cemetery .cnt_area01 {
-		padding-bottom: 10px;
+		/* padding-bottom: 10px; */
+		padding-bottom: 2.66666666666667vw;
 	}
 
 	.cemetery .cnt_area01 .boxes .boxes {
@@ -2150,9 +2227,14 @@ width: 49.81%;
 		font-size: 5.9vw;
 		line-height: 8.9vw;
 	}
-
+	.cemetery .sec01 .left_box .ttl_around_h3 {
+		/* width: 5.33333333333333vw; */
+		border-width: 0.266666666666667vw;
+		padding-left: 8vw;
+    padding-bottom: 8vw;
+	}
 	.cemetery .sec01 .left_box .ttl_around_h3::before {
-		top: 28px;
+		top: 4.26666666666667vw;
 	}
 
 	.cemetery .sec01 .cnt_area01 .left_box {
@@ -2172,11 +2254,13 @@ width: 49.81%;
 	/* ↑↑ここまで↑↑ */
 
 	.cemetery .sec01 .cnt_area02 {
-		margin-bottom: 20px;
+		/* margin-bottom: 20px; */
+		margin-bottom: 5.33333333333333vw;
 	}
 
 	.cemetery .cnt_around {
-		padding: 20px;
+		/* padding: 20px; */
+		padding: 5.33333333333333vw;
 	}
 
 	.cemetery .cnt_area01 .cnt_area01_box02 .cnt_around {
@@ -2184,7 +2268,8 @@ width: 49.81%;
 	}
 
 	.cemetery .sec01 .cnt_area02 .cnt_around ol {
-		padding-bottom: 15px;
+		/* padding-bottom: 15px; */
+		padding-bottom: 4vw;
 	}
 
 	.cemetery .sec01 .cnt_area02 .cnt_around ol li {
@@ -2193,7 +2278,8 @@ width: 49.81%;
 	}
 
 	.cemetery .sec01 .cnt_area03 .cnt_around ol {
-		padding-top: 15px;
+		/* padding-top: 15px; */
+		padding-top: 4vw;
 	}
 
 	.cemetery .sec01 .cnt_area03 .cnt_around ol li {
@@ -2209,8 +2295,8 @@ width: 49.81%;
 		font-size: 5.9vw;
 		width: 14vw;
 		height: 8vw;
-		margin-right: 7px;
-		padding-top: 10px;
+		margin-right: 2.66666666666667vw;
+		padding-top: 1.06666666666667vw;
 	}
 
 	.cemetery .sec02 .left_box .ttl_around_h2 {
@@ -2248,8 +2334,8 @@ width: 49.81%;
 		font-size: 5.9vw;
 		width: 8vw;
 		height: 8vw;
-		margin-right: 7px;
-		padding-top: 10px;
+		margin-right: 2.66666666666667vw;
+		padding-top: 1.06666666666667vw;
 	}
 
 	.cemetery .sec02 .cnt_area02 .ttl_around_h2,
@@ -2275,8 +2361,8 @@ width: 49.81%;
 		font-size: 5.9vw;
 		width: 12vw;
 		height: 8vw;
-		margin-right: 7px;
-		padding-top: 10px;
+		margin-right: 2.66666666666667vw;
+		padding-top: 1.06666666666667vw;
 	}
 
 	#ossuary01 .sec02 .cnt_area03 .left_box .ttl_around_h2 .circle {
@@ -2294,8 +2380,8 @@ width: 49.81%;
 		font-size: 5.9vw;
 		width: 12vw;
 		height: 8vw;
-		margin-right: 7px;
-		padding-top: 10px;
+		margin-right: 2.66666666666667vw;
+		padding-top: 1.06666666666667vw;
 	}
 
 	#ossuary02 .sec02 .cnt_area03 .sp .right_sp .img_box {
@@ -2406,765 +2492,4 @@ width: 49.81%;
 	#reburial .sec03 .bg_col {
 		padding: 6%;
 	}
-}
-
-@media only screen and (max-width:768px) {
-
-	/*----------
-	02.pk
-	----------*/
-	#pk .main_title {
-		/* font-size: 2.864vw; */
-	}
-
-	#pk .main_title .sub {
-		/* font-size: 2.34vw; */
-	}
-
-	#pk h2 {
-		/* font-size: 2.864vw; */
-	}
-
-	#pk .h2_btn .more_btn a {
-		/* font-size: 1.69vw; */
-	}
-
-	#pk .column_01 .cnt_box_in .flex_box {
-		/* font-size: 1.56vw; */
-	}
-
-	#pk .column_01 .cnt_box_in .title {
-		/* font-size: 1.82vw; */
-	}
-
-	#pk .column_02 dt {
-		/* font-size: 2.08vw; */
-	}
-
-	#pk .column_02 dd {
-		/* font-size: 1.822vw; */
-		;
-	}
-
-	#pk .column_02 .more_btn a {
-		/* font-size: 1.69vw; */
-	}
-
-	/*----------
-	04.news
-	----------*/
-	/* #news {
-		margin-top: 92px;
-	}
-
-	#news .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-date {
-		font-size: 1.822vw;
-	}
-
-	#news .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-ttl {
-		font-size: 2.08vw;
-	} */
-
-	/*----------
-	05.news_detail
-	----------*/
-	/* #news_detail {
-		margin-top: 92px;
-	}
-
-	#news_detail .ctn-nd__main .ctn-nd__wrapper {
-		padding: 20px 15px;
-	}
-
-	#news_detail .ctn-nd__main .ctn-nd__wrapper .ctn-nd__ttl h2 {
-		font-size: 3.125vw;
-	} */
-
-	/*----------
-	06.pk_info
-	----------*/
-
-	/* #pk_info .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-ttl {
-		font-size: 1.82vw;
-	}
-
-	#pk_info .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-date {
-		font-size: 1.69vw;
-	}
-
-	#pk_info .ctn-n-main aside .nav_box .nav_ttl h2 {
-		font-size: 1.69vw;
-	}
-
-	#pk_info .ctn-n-main aside .nav_box .nav_ttl span {
-		font-size: 1.56vw;
-	}
-
-	#pk_info .ctn-n-main aside .nav_box nav {
-		font-size: 1.56vw;
-	} */
-
-	/*----------
-	07.pk_info_detail
-	----------*/
-	/* #pk_info_detail {
-		margin-top: 92px;
-	}
-
-	#pk_info_detail .ctn-nd__main .ctn-nd__wrapper {
-		padding: 20px 15px;
-	}
-
-	#pk_info_detail .ctn-nd__main .ctn-info_left .ctn-nd__wrapper {
-		padding: 15px 20px;
-	}
-
-	#pk_info_detail .ctn-nd__main .ctn-info_left .ctn-nd__wrapper .ctn-nd__ttl h2 {
-		font-size: 2.6vw;
-	}
-
-	#pk_info_detail .ctn-nd__main .ctn-info_left .ctn-nd__wrapper p {
-		font-size: 1.82vw;
-	} */
-
-
-	/*----------
-	08.faq
-	----------*/
-	/* #faq {
-		margin-top: 92px;
-	}
-
-	#faq .title {
-		font-size: 1.82vw;
-	}
-
-	#faq .title span {
-		font-size: 2.86vw;
-	}
-
-	#faq .box {
-		font-size: 1.69vw;
-	} */
-
-	/*----------
-	09.access
-	----------*/
-	/* .pk_secondary .tab_area label {
-		font-size: 2.78vw;
-	}
-
-	.pk_secondary .dw-btn p {
-		font-size: 2.953vw;
-	} */
-
-
-	/*----------
-	10.pk_secondary
-	----------*/
-	/* .pk_secondary .cnt_fac .box_02 .item h3 {
-		font-size: 2.08vw;
-	}
-
-	.pk_secondary .cnt_fac h2 {
-		font-size: 2.604vw;
-	}
-
-	.pk_secondary .cnt_fac .box_01 .wrp_txt h3 {
-		font-size: 2.08vw;
-	}
-
-	.pk_secondary .cnt_fac .wrp_txt .txt {
-		font-size: 1.822vw;
-	}
-
-	.pk_secondary .cnt_fac .gray_box {
-		font-size: 1.822vw;
-	}
-
-	.pk_secondary .cnt_fac .box_info .st {
-		font-size: 1.56vw;
-	}
-
-	.pk_secondary .cnt_fac .box_info .wrp_flex .item .txt {
-		font-size: 1.56vw;
-	}
-
-	.pk_secondary .cnt_area01 h2 {
-		font-size: 2.34vw;
-	}
-
-	.pk_secondary .cnt_area01 ul li {
-		font-size: 1.82vw;
-	} */
-}
-
-@media only screen and (max-width: 750px) {
-
-	/*----------
-	10.pk_secondary
-	----------*/
-	/* .pk_secondary .cnt_fac {
-		padding: 8vw 4vw;
-		border-radius: 15px;
-	}
-
-	.pk_secondary .cnt_fac h2 {
-		margin-bottom: 20px;
-		padding: 0 0 12px 32px;
-		font-size: 20px;
-		line-height: 29px;
-	}
-
-	.pk_secondary .cnt_fac h2::before {
-		left: 0;
-		width: 23px;
-		height: 29px;
-	}
-
-	.pk_secondary .cnt_fac .wrp_img img {
-		border-radius: 5px;
-	}
-
-	.pk_secondary .cnt_fac .wrp_txt .txt {
-		font-size: 14px;
-		line-height: 22px;
-	}
-
-	.pk_secondary .cnt_fac .wrp_txt .txt .dl_box span {
-		display: block;
-	}
-
-	.pk_secondary .cnt_fac .box_01 .wrp_txt {
-		margin-top: 15px;
-	}
-
-	.pk_secondary .cnt_fac .box_01 .wrp_txt h3 {
-		font-size: 16px;
-		line-height: 19px;
-	}
-
-	.pk_secondary .cnt_fac .gray_box {
-		font-size: 14px;
-		line-height: 22px;
-		padding: 20px;
-	}
-
-	.pk_secondary .cnt_fac .gray_box h4 {
-		padding-bottom: 22px;
-	}
-
-	.pk_secondary .cnt_fac .box_02 {
-		display: block;
-		margin-top: 40px;
-	}
-
-	.pk_secondary .cnt_fac .box_02 .item {
-		position: relative;
-		width: 100%;
-	}
-
-	.pk_secondary .cnt_fac .box_02 .item+.item {
-		margin: 20px 0 0 0;
-	}
-
-	.pk_secondary .cnt_fac .box_02 .item .wrp_img {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-	} */
-
-	/* .pk_secondary .cnt_fac .box_02 .item .wrp_img02 {
-		-webkit-box-align: start;
--ms-flex-align: start;
-align-items: flex-start;
-	} */
-
-	/* .pk_secondary .cnt_fac .box_02 .item .wrp_img .img {
-		width: 39.345%;
-	}
-
-	.pk_secondary .cnt_fac .box_02 .item h3 {
-		width: 60.655%;
-		margin-top: 0;
-		padding-left: 4.9%;
-		font-size: 16px;
-		line-height: 25px;
-	}
-
-	.pk_secondary .cnt_fac .box_02 .item .wrp_txt {
-		margin-top: 10px;
-	}
-
-	.pk_secondary .cnt_fac .box_info .wrp_flex .item {
-		width: calc(100% / 3);
-	}
-
-	.pk_secondary .cnt_fac .box_info .wrp_flex .item .txt {
-		font-size: 12px;
-	}
-
-	.pk_secondary .cnt_fac .box_info .wrp_flex .item .txt span {
-		display: inline;
-	}
-
-	.pk_secondary .cnt_fac .monuments .item .wrp_img .img {
-		width: calc((100% - 4.9%)/2);
-	}
-
-	.pk01_facility .cnt_fac.map .img_info {
-		max-width: 610px;
-		margin-top: 15px;
-	}
-
-	.pk_secondary .cnt_area01 ul li::before {
-		top: 6px;
-	} */
-
-	/*---SP scroll area---*/
-	/* .pk_secondary .scroll-box div .img_map {
-		min-width: 600px;
-	} */
-
-	/*----------
-01.other_procedure（その他の手続き）
-----------*/
-	/* #other_procedure .main_area .left_box h3 span::before {
-		top: 12px;
-	} */
-
-	/*----------
-02.cemetery（納骨手続き（墓地））
-----------*/
-	/* .cemetery .sec01 .left_box .ttl_around_h3::before {
-		top: 14px;
-	}
-
-	.cemetery .sec02 .cnt_area01 .left_box .ttl_around_h2 .circle,
-	.cemetery .sec02 .cnt_area02 .left_box .ttl_around_h2 .circle,
-	.cemetery .sec02 .cnt_area03 .left_box .ttl_around_h2 .circle {
-		padding-top: 5px;
-	}
-
-	#ossuary01 .sec02 .cnt_area01 .left_box .ttl_around_h2 .circle {
-		padding-top: 5px;
-	}
-
-	#ossuary01 .sec02 .cnt_area03 .left_box .ttl_around_h2 .circle {
-		padding-top: 5px;
-	} */
-
-	/*----------
-	04.ossuary02（納骨手続き（永久収蔵納骨堂））
-	----------*/
-	/* #ossuary02 .sec02 .cnt_area01 .left_box .ttl_around_h2 .circle {
-		padding-top: 5px;
-	} */
-
-	/*----------
-	05.reburial（改葬の手続き）
-	----------*/
-	/* #reburial .sec01 ul li::before {
-		top: 7px;
-	} */
-}
-
-@media only screen and (max-width:425px) {
-
-	/*----------
-	02.pk
-	----------*/
-	/* #pk .main_title {
-		font-size: 5.17vw;
-	}
-
-	#pk .main_title .sub {
-		font-size: 4.23vw;
-	}
-
-	#pk h2 {
-		font-size: 5.17vw;
-	}
-
-	#pk .h2_btn .more_btn a {
-		font-size: 3.05vw;
-	}
-
-	#pk .column_01 .cnt_box_in .flex_box {
-		font-size: 2.82vw;
-	}
-
-	#pk .column_01 .cnt_box_in .title {
-		font-size: 3.29vw;
-	}
-
-	#pk .column_02 dt {
-		font-size: 3.76vw;
-	}
-
-	#pk .column_02 dd {
-		font-size: 3.29vw;
-		;
-	}
-
-	#pk .column_02 .more_btn a {
-		font-size: 3.05vw;
-	} */
-
-	/*----------
-	04.news
-	----------*/
-	/* #news {
-		margin-top: 60px;
-	}
-
-	#news .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-date {
-		font-size: 3.294vw;
-	}
-
-	#news .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-ttl {
-		font-size: 3.76vw;
-	} */
-
-	/*----------
-	05.news_detail
-	----------*/
-	/* #news_detail {
-		margin-top: 60px;
-	}
-
-	#news_detail .ctn-nd__main .ctn-nd__wrapper .ctn-nd__ttl h2 {
-		font-size: 5.64vw;
-		line-height: 1.4;
-	}
-
-	#pk_info_detail .ctn-nd__main .ctn-info_left .ctn-nd__wrapper .ctn-nd__ttl h2 {
-		font-size: 4.7vw;
-	}
-
-	#news_detail .ctn-nd__main .ctn-nd__wrapper p {
-		font-size: 14px;
-		line-height: 2;
-	} */
-
-	/*******.nd-pagerエリア**********/
-	/* #news_detail .nd-pager ul {
-		font-size: 13px;
-	}
-
-	#news_detail .nd-pager ul .nd-pager__pre a span,
-	.nd-pager__next a span {
-		height: 30px;
-		width: 30px;
-	}
-
-	#news_detail .nd-pager ul .nd-pager__pre a span::after,
-	.nd-pager__next a span::after {
-		width: 5px;
-		height: 5px;
-		position: absolute;
-		top: 11px;
-		left: 12px;
-	}
-
-	#news_detail .nd-pager {
-		margin: 30px auto 0 auto;
-	} */
-
-	/*******.backbtnエリア**********/
-	/* #news_detail .ctn-nd__main .backbtn a {
-		max-width: 180px;
-		padding: 14px 22px;
-		margin-top: 40px;
-	}
-
-	#news_detail .ctn-nd__main .backbtn {
-		font-size: 13px;
-	}
-
-	#news_detail .ctn-nd__main .backbtn a::after {
-		width: 5px;
-		height: 5px;
-		top: 17px;
-	} */
-
-	/*----------
-	06.pk_info
-	----------*/
-	/* #pk_info {
-		margin-top: 60px;
-	}
-
-	#pk_info .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-ttl {
-		font-size: 3.29vw;
-	}
-
-	#pk_info .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-date {
-		font-size: 3.054vw;
-	}
-
-	#pk_info .ctn-n-main aside .nav_box .nav_ttl h2 {
-		font-size: 3.05vw;
-	}
-
-	#pk_info .ctn-n-main aside .nav_box .nav_ttl span {
-		font-size: 2.82vw;
-	}
-
-	#pk_info .ctn-n-main aside .nav_box nav {
-		font-size: 2.82vw;
-	} */
-
-	/*----------
-	07.pk_info_detail
-	----------*/
-	/* #pk_info_detail {
-		margin-top: 60px;
-	}
-
-	#pk_info_detail .ctn-nd__main .ctn-nd__wrapper .ctn-nd__ttl h2 {
-		font-size: 4.7vw;
-		line-height: 1.4;
-	}
-
-	#pk_info_detail .ctn-nd__main .ctn-info_left .ctn-nd__wrapper p {
-		font-size: 3.29vw
-	} */
-
-	/*----------
-	09.access
-	----------*/
-	/* .pk_secondary .tab_area label {
-		font-size: 3.29vw;
-	}
-
-	.pk_secondary #tab1:checked~.tab_area .tab1_label::before,
-	.pk_secondary #tab2:checked~.tab_area .tab2_label::before,
-	.pk_secondary #tab3:checked~.tab_area .tab3_label::before,
-	.pk_secondary #tab4:checked~.tab_area .tab4_label::before {
-		height: 10px;
-	}
-
-	.pk_secondary .dw-btn p {
-		font-size: 3.529vw;
-	} */
-
-
-	/*******.nd-pagerエリア**********/
-	/* #pk_info_detail .nd-pager ul {
-		font-size: 13px;
-	}
-
-	#pk_info_detail .nd-pager ul .nd-pager__pre a span,
-	.nd-pager__next a span {
-		height: 30px;
-		width: 30px;
-	}
-
-	#pk_info_detail .nd-pager ul .nd-pager__pre a span::after,
-	.nd-pager__next a span::after {
-		width: 5px;
-		height: 5px;
-		position: absolute;
-		top: 11px;
-		left: 12px;
-	}
-
-	#pk_info_detail .nd-pager {
-		margin: 30px auto 0 auto;
-	} */
-
-	/*******.backbtnエリア**********/
-	/* #pk_info_detail .ctn-nd__main .backbtn a {
-		max-width: 180px;
-		padding: 14px 22px;
-		margin-top: 40px;
-	}
-
-	#pk_info_detail .ctn-nd__main .backbtn {
-		font-size: 13px;
-	}
-
-	#pk_info_detail .ctn-nd__main .backbtn a::after {
-		width: 5px;
-		height: 5px;
-		top: 17px;
-	} */
-
-	/* #pk_info_detail aside .nav_box .nav_ttl h2{
-	font-size: 3.05vw;
-	}
-
-	#pk_info_detail aside .nav_box .nav_ttl span{
-	font-size: 2.82vw;
-	}
-
-	#pk_info_detail aside .nav_box nav{
-	font-size: 2.82vw;
-	} */
-
-	/*----------
-	08.faq
-	----------*/
-	/* #faq {
-		margin-top: 60px;
-	}
-
-	#faq .title {
-		font-size: 4.26vw;
-	}
-
-	#faq .title span {
-		font-size: 5.17vw;
-	}
-
-	#faq .box {
-		font-size: 3.73vw;
-	} */
-
-
-	/*----------
-	10.pk_secondary
-	----------*/
-	/* .pk_secondary .cnt_fac .box_02 .item h3 {
-		font-size: 3.764vw;
-	}
-
-	.pk_secondary .cnt_fac h2 {
-		font-size: 4.705vw;
-	}
-
-	.pk_secondary .cnt_fac .box_01 .wrp_txt h3 {
-		font-size: 3.76vw;
-	}
-
-	.pk_secondary .cnt_fac .wrp_txt .txt {
-		font-size: 3.29vw;
-	}
-
-	.pk_secondary .cnt_fac .gray_box {
-		font-size: 3.29vw;
-	}
-
-	.pk_secondary .cnt_fac .box_info .st {
-		font-size: 2.823vw;
-	}
-
-	.pk_secondary .cnt_fac .box_info .wrp_flex .item .txt {
-		font-size: 2.823vw;
-	}
-
-	.pk_secondary .cnt_area01 h2 {
-		font-size: 4.23vw;
-	}
-
-	.pk_secondary .cnt_area01 ul li {
-		font-size: 3.29vw;
-	} */
-
-	/*---SP scroll area---*/
-	/* .pk_secondary .scroll-box div .img_map {
-		min-width: 500px;
-	} */
-}
-
-@media only screen and (max-width: 375px) {
-
-	/*----------
-	10.pk_secondary
-	----------*/
-	/* .pk_secondary .cnt_fac .box_02 .item h3 {
-		font-size: 4.266vw;
-	}
-
-	.pk_secondary .cnt_fac .box_01 .wrp_txt h3 {
-		font-size: 4.266vw;
-	}
-
-	.pk_secondary .cnt_fac .wrp_txt .txt {
-		font-size: 3.73vw;
-	}
-
-	.pk_secondary .cnt_fac .gray_box {
-		font-size: 3.73vw;
-	}
-
-	.pk_secondary .cnt_fac .box_info .st {
-		font-size: 3.2vw;
-	}
-
-	.pk_secondary .cnt_fac .box_info .wrp_flex .item .txt {
-		font-size: 3.2vw;
-	}
-
-	.pk_secondary .cnt_area01 h2 {
-		font-size: 4.8vw;
-	}
-
-	.pk_secondary .cnt_area01 ul li {
-		font-size: 3.73vw;
-	} */
-}
-
-@media only screen and (max-width:360px) {
-
-	/*----------
-	01.top
-	----------*/
-	/* #top .contents_in.popup .title+.flex_box .cnt_text {
-		font-size: 3.8vw;
-	} */
-}
-
-@media only screen and (max-width:320px) {
-
-	/*----------
-	04.news
-	----------*/
-	/* #news .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-ttl::after {
-		right: -2%;
-	}
-
-	#news .pagination .next a span {
-		margin-left: 5px;
-	}
-
-	#news .pagination .next a span {
-		margin-left: 5px;
-	}
- */
-	/*----------
-	06.pk_info
-	----------*/
-	/* #pk_info .ctn-n-main .ctn-n-list .list-all-wrap .n-items li a .n-ttl::after {
-		right: -2%;
-	}
-
-	#pk_info .pagination .next a span {
-		margin-left: 5px;
-	}
-
-	#pk_info .pagination .next a span {
-		margin-left: 5px;
-	} */
-
-	/*----------
-	07.pk_info_detail
-	----------*/
-	/* #pk_info_detail .ctn-nd__main .ctn-n-list .list-all-wrap .n-items li a .n-ttl::after {
-		right: -2%;
-	}
-
-	#pk_info_detail .pagination .next a span {
-		margin-left: 5px;
-	}
-
-	#pk_info_detail .pagination .next a span {
-		margin-left: 5px;
-	} */
-
 }
