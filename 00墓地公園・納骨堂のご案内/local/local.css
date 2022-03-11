@@ -103,7 +103,8 @@
 }
 
 #top .cnt_area02 {
-	padding: 97px 0 117px;
+	/* padding: 97px 0 117px; */
+	padding: 97px 0 0;
 }
 
 #top .cnt_area02 h2,
@@ -405,7 +406,8 @@
 }
 
 #top .cnt_area03 {
-	padding-top: 47px;
+	/* padding-top: 47px; */
+	padding-top: 117px;
 }
 
 #top .cnt_area03 .cnt_text02:last-child {

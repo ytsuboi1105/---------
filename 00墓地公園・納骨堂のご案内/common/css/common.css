@@ -36,14 +36,6 @@ body {
 	color: #363636;
 }
 
-.pc {
-	display: block;
-}
-
-.sp {
-	display: none;
-}
-
 .contents_in {
 	max-width: 1186px;
 	width: 100%;
@@ -1061,6 +1053,15 @@ footer .cnt_text_last {
 	right: 5%;
 }
 
+@media (min-width: 1025px) {
+	.pc {
+	}
+
+	.sp {
+		display: none;
+	}
+}
+
 
 @media (min-width: 1025px) and (max-width: 1365px) {
 	/*----------
@@ -1176,7 +1177,6 @@ margin-left: 25%;
 	}
 
 	.sp {
-		display: block;
 	}
 
 	.contents_in {

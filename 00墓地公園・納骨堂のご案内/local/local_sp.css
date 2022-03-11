@@ -85,7 +85,7 @@
 
 	#top .cnt_area02 {
 		/* padding: 27px 0 57px; */
-		padding: 7.2vw 0 16vw;
+		padding: 7.2vw 0 0;
 		position: relative;
 	}
 
@@ -172,13 +172,13 @@
 	}
 
 	#top .cnt_area03 {
-		padding-top: 0;
+		padding-top: 16vw;
 	}
 
 	#top .cnt_area03 .cnt_text {
 		/* margin-top: 10.2px; */
 		margin-top: 0;
-		font-size: 4.8vw;
+		font-size: 3.73333333333333vw;
 		/* line-height: 7.65vw; */
 		line-height: 1.55;
 		/* margin-bottom: 29.2px; */
@@ -2051,7 +2051,7 @@ width: 49.81%;
 
 	#other_procedure .main_area .left_box h3 span::before {
 		width: 4.6vw;
-		top: 26px;
+		top: 3.5vw;
 	}
 
 	#other_procedure .main_area .sec01 .left_box .disc_box {
@@ -2234,6 +2234,7 @@ width: 49.81%;
     padding-bottom: 8vw;
 	}
 	.cemetery .sec01 .left_box .ttl_around_h3::before {
+		width: 4.6vw;
 		top: 4.26666666666667vw;
 	}
 
@@ -2292,11 +2293,13 @@ width: 49.81%;
 	}
 
 	.cemetery .sec02 .cnt_area01 .left_box .ttl_around_h2 .circle {
+		flex-shrink: 0;
 		font-size: 5.9vw;
-		width: 14vw;
+		width: 8vw;
 		height: 8vw;
 		margin-right: 2.66666666666667vw;
 		padding-top: 1.06666666666667vw;
+		flex-shrink: 0;
 	}
 
 	.cemetery .sec02 .left_box .ttl_around_h2 {
@@ -2336,6 +2339,7 @@ width: 49.81%;
 		height: 8vw;
 		margin-right: 2.66666666666667vw;
 		padding-top: 1.06666666666667vw;
+		flex-shrink: 0;
 	}
 
 	.cemetery .sec02 .cnt_area02 .ttl_around_h2,
@@ -2359,18 +2363,20 @@ width: 49.81%;
 
 	#ossuary01 .sec02 .cnt_area01 .left_box .ttl_around_h2 .circle {
 		font-size: 5.9vw;
-		width: 12vw;
+		width: 8vw;
 		height: 8vw;
 		margin-right: 2.66666666666667vw;
 		padding-top: 1.06666666666667vw;
+		flex-shrink: 0;
 	}
 
 	#ossuary01 .sec02 .cnt_area03 .left_box .ttl_around_h2 .circle {
 		font-size: 5.9vw;
-		width: 9vw;
+		width: 8vw;
 		height: 8vw;
-		margin-right: 7px;
-		padding-top: 10px;
+		margin-right: 2.66666666666667vw;
+		padding-top: 1.06666666666667vw;
+		flex-shrink: 0;
 	}
 
 	/*----------
@@ -2378,10 +2384,11 @@ width: 49.81%;
 ----------*/
 	#ossuary02 .sec02 .cnt_area01 .left_box .ttl_around_h2 .circle {
 		font-size: 5.9vw;
-		width: 12vw;
+		width: 8vw;
 		height: 8vw;
 		margin-right: 2.66666666666667vw;
 		padding-top: 1.06666666666667vw;
+		flex-shrink: 0;
 	}
 
 	#ossuary02 .sec02 .cnt_area03 .sp .right_sp .img_box {
@@ -2424,7 +2431,7 @@ width: 49.81%;
 	}
 
 	#reburial .sec01 ul li::before {
-		top: 20px;
+		top: 10px;
 	}
 
 	#reburial .sec02 {
