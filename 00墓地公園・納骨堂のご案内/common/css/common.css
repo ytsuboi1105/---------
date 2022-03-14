@@ -136,8 +136,8 @@ header .flex_box01 {
 header .flex_box nav {
 	/* width: 73.5%;
 	margin-right: 16.56%; */
-	width: 510px;
-	margin-right: 70px;
+	width: 550px;
+	margin-right: 45px;
 }
 
 header .flex_box nav ul {
@@ -1058,7 +1058,7 @@ footer .cnt_text_last {
 	}
 
 	.sp {
-		display: none;
+		display: none!important;
 	}
 }
 
@@ -1173,7 +1173,7 @@ margin-left: 25%;
 	----------*/
 
 	.pc {
-		display: none;
+		display: none!important;
 	}
 
 	.sp {

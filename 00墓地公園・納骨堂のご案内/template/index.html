@@ -1,3 +1,4 @@
+<$mt:SetVar name="is_home" value="1"$>
 <$mt:Include module="header" $>
   <div id="top">
     <!-- それぞれのページに固有のIDをつけてください。 -->
@@ -24,6 +25,7 @@
       </div>
       <!-- END  .cnt_area01 -->
     </section>
+  <mt:If tag="BlogEntryCount" gt="0">
     <section class="cnt_area02">
       <div class="contents_in">
         <div class="h2_btn">
@@ -31,16 +33,18 @@
 
           <div class="more_btn sp"><a href="<$mt:BlogRelativeURL$>news/"><span>もっと見る</span></a></div>
         </div>
-        <!-- <mt:entries include_blogs="all" lastn="3"> -->
+        <mt:entries lastn="3">
           <div class="cnt_box"> <a href="<$mt:EntryPermalink$>" terget="blank">
               <div class="cnt_box_in">
                 <div class="flex_box">
                   <div class="cnt_date">
-                    <$MTDate format="%Y.%m.%d" $>
+                    <$MTEntryDate format="%Y.%m.%d" $>
                   </div>
+                <mt:If tag="BlogRelativeURL" ne="/memorial-park/">
                   <div class="cnt_category">
                     <$mt:CustomFieldValue identifier="shortened_name" $>
                   </div>
+                </mt:if>
                 </div>
                 <div class="title">
                   <$mt:EntryTitle$>
@@ -55,6 +59,7 @@
       </div>
       <!-- END  .cnt_area02 -->
     </section>
+  </mt:If>
     <section class="cnt_area03">
       <div class="contents_in">
         <h2>墓地・納骨堂の種類</h2>
@@ -69,7 +74,7 @@
           </div>
           <div class="cnt_box">
             <div class="flex_box_sm"><span>長期収蔵型納骨堂</span>
-              <div class="cnt_img"><img src="<$mt:BlogRelativeURL$>img/top/pic03_top.png" alt="画像:長期収蔵型納骨堂"></div>
+              <div class="cnt_img"><img src="<$mt:BlogRelativeURL$>img/top/pic03_top.png"  class="img-rounded" alt="画像:長期収蔵型納骨堂"></div>
             </div>
             <p>
               立体型墓地ともいえる室内型納骨施設です。１区画を20年間お使いいただけます。使用期間中は、納骨・ご遺骨の引き取り・納骨施設の前での参拝が可能です。使用期間満了後は、当会が併設の永久収蔵納骨室に移動します。（使用期間35年の受付は終了しました）
@@ -78,7 +83,7 @@
           </div>
           <div class="cnt_box">
             <div class="flex_box_sm"><span>永久収蔵納骨堂</span>
-              <div class="cnt_img"><img src="<$mt:BlogRelativeURL$>img/top/pic04_top.png" alt="画像:永久収蔵納骨堂"></div>
+              <div class="cnt_img"><img src="<$mt:BlogRelativeURL$>img/top/pk04_02.jpg" class="img-rounded" alt="画像:永久収蔵納骨堂"></div>
             </div>
             <p>合葬式の納骨施設です。骨壺ごとに収蔵し、ご遺骨を当会で永久にお預かりします（納骨後のお引き取り・対面参拝はできません）。ご遺骨を安心かつ安定して保管できる収蔵施設です。</p>
             <!-- END  .cnt_box -->
@@ -89,7 +94,7 @@
 
         <div id="search" class="flex_box flex_box01">
           <h2>墓地・納骨堂を探す</h2>
-          <div class="btn"><a href=""><span>一覧を見る</span></a></div>
+          <!--<div class="btn"><a href=""><span>一覧を見る</span></a></div>-->
           <!-- END  .flex_box01 -->
         </div>
 
@@ -955,22 +960,19 @@
       <!-- END  .cnt_area04 -->
     </section>
 
-    <mt:Ignore>
-      使用していないようなので一旦コメントアウト
-      <!--popup-->
-      <div class="movie sp">
-        <div class="modal_bg"></div>
-        <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
-        <div class="contents_in">
-          <div class="video">
-            <!--<img src="<$mt:BlogRelativeURL$>img/top/pic01_top.png" alt="メインビジュアル">-->
-            <!--<video src="<$mt:BlogRelativeURL$>img/top/video02.mp4" autoplay muted playsinlin></video>-->
-          </div>
-
+    <!--popup-->
+    <div class="movie sp">
+      <div class="modal_bg"></div>
+      <div class="close"><img src="<$mt:BlogRelativeURL$>common/img/icon_close.png" alt=""></div>
+      <div class="contents_in">
+        <div class="video">
+          
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qe2_yYtEZrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
       </div>
-    </mt:Ignore>
+
+    </div>
 
     <!-- END  #top -->
   </div>
