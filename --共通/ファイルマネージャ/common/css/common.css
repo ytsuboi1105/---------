@@ -534,7 +534,7 @@ header .slide .cnt_box13 {
 	overflow: auto;
 	position: fixed;
 	/* height: 100%; */
-	height: calc(100% - 142px);
+	/* height: calc(100% - 142px); */
 }
 header .slide .cnt_box13 .contents_in {
 	justify-content: space-between;

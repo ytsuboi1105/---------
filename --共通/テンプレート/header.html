@@ -1,20 +1,33 @@
-<mt:SetVarBlock name="pageurl"><$mt:PageBasename$></mt:SetVarBlock>
-<!doctype html><!-- <$mt:Var name="pageurl"$>-->
+<mt:If name="page_type" eq="home">
+<MTSetVarBlock name="title_text"><$mt:BlogName$>｜<$mt:WebsiteName$></MTSetVarBlock>
+<MTSetVarBlock name="description_text"><$mt:BlogDescription$></MTSetVarBlock>
+<mt:ElseIf name="page_type" eq="news_list">
+<MTSetVarBlock name="title_text">お知らせ｜<$mt:BlogName$> - <$mt:WebsiteName$></MTSetVarBlock>
+<MTSetVarBlock name="description_text"><$mt:BlogDescription$></MTSetVarBlock>
+<mt:ElseIf name="page_type" eq="news_detail">
+<MTSetVarBlock name="title_text"><$mt:EntryTitle$>｜<$mt:BlogName$> - <$mt:WebsiteName$></MTSetVarBlock>
+<MTSetVarBlock name="description_text"><$mt:EntryExcerpt$></MTSetVarBlock>
+<mt:ElseIf name="page_type" eq="webpage">
+<MTSetVarBlock name="title_text"><mt:PageTitle>｜<$mt:BlogName$> - <$mt:WebsiteName$></MTSetVarBlock>
+<MTSetVarBlock name="description_text"><$mt:PageExcerpt$></MTSetVarBlock>
+<mt:ElseIf name="page_type" eq="404">
+<MTSetVarBlock name="title_text">お探しのページが見つかりません - Not Found｜<$mt:BlogName$> - <$mt:WebsiteName$></MTSetVarBlock>
+<MTSetVarBlock name="description_text"><$mt:BlogDescription$></MTSetVarBlock>
+<mt:Else>
+</mt:If><!doctype html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>
-    <$mt:BlogName$>｜<$mt:WebsiteName$>
-  </title>
+  <title><$mt:Var name="title_text"$></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta property="og:title" content="" />
+  <meta name="description" content="<$mt:Var name="description_text"$>" />
+  <meta property="og:title" content="<$mt:Var name="title_text"$>" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
   <meta property="og:image" content="" />
   <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
+  <meta property="og:description" content="<$mt:Var name="description_text"$>" />
   <meta name="twitter:card" content="">
   <meta property="twitter:url" content="" />
   <meta property="og:image" content="<$mt:Link template='メインページ' blog_id='memorial_park'$>common/img/OGP.jpg">
@@ -211,13 +224,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="cnt_text first_text01">各種の手続き</div>
               <ul>
                 <li>
-                  <div class="cnt_text"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/cemetery/">納骨の手続き（墓地）</a></div>
+                  <div class="cnt_text"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/cemetery/">納骨手続き（墓地）</a></div>
                 </li>
                 <li>
-                  <div class="cnt_text"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary01/">納骨の手続き（長期収蔵型納骨堂）</a></div>
+                  <div class="cnt_text"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary01/">納骨手続き（長期収蔵型納骨堂）</a></div>
                 </li>
                 <li>
-                  <div class="cnt_text bb"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary02/">納骨の手続き（永久収蔵納骨堂）</a></div>
+                  <div class="cnt_text bb"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary02/">納骨手続き（永久収蔵納骨堂）</a></div>
                 </li>
               </ul>
               <ul>
@@ -248,13 +261,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="cnt_text nlik"><a>各種の手続き</a></div>
               <ul>
                 <li>
-                  <div class="cnt_text"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/cemetery/">納骨の手続き（墓地）</a></div>
+                  <div class="cnt_text"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/cemetery/">納骨手続き（墓地）</a></div>
                 </li>
                 <li>
-                  <div class="cnt_text"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary01/">納骨の手続き（長期収蔵型納骨堂）</a></div>
+                  <div class="cnt_text"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary01/">納骨手続き（長期収蔵型納骨堂）</a></div>
                 </li>
                 <li>
-                  <div class="cnt_text"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary02/">納骨の手続き（永久収蔵納骨堂）</a></div>
+                  <div class="cnt_text"><a href="<$mt:Link template='メインページ' blog_id='memorial_park'$>procedure/ossuary02/">納骨手続き（永久収蔵納骨堂）</a></div>
                 </li>
               </ul>
               <ul>

@@ -650,14 +650,29 @@ height: 60.26%;
 		padding-left: 17px;
 	}
 
+	#pk .slick-slide {
+		width: 83.46%;
+		margin: 0 7.5px;
+	}
+
 	#pk .slick-slide img {
 		border-radius: 2.66666666666667vw;
 	}
+	#pk .slick-slide .movie-play-btn {
+		display: inline-block;
+		position: absolute;
+		bottom: 2.533333333vw;
+		right: 2.266666667vw;
+		width: 11.14492vw;
+		height: 11.14492vw;
+		background: url(../common/img/btn_play2.svg) 50% 50% no-repeat;
+		background-size: auto 11.14492vw;
+	}
+
 	#pk .slide-arrow {
 		top: 38.05%;
 		z-index: 1;
 	}
-
 	#pk .prev-arrow {
 		left: 2.8%;
 		width: 8.53333333vw;
@@ -678,11 +693,6 @@ height: 60.26%;
 		width: 100%;
 	}
 
-	#pk .slick-slide {
-		width: 83.46%;
-		margin: 0 7.5px;
-
-	}
 
 	#pk .cnt_area02 {
 		padding-top: 0;
@@ -1338,6 +1348,7 @@ width: 49.81%;
 	}
 	#news_detail .ctn-nd__main .backbtn {
 		font-size: 3.46666666666667vw;
+    flex-flow: wrap;
 	}
 	#news_detail .ctn-nd__main .backbtn a {
 		max-width: 48vw;
@@ -1525,6 +1536,7 @@ width: 49.81%;
 	}
 	#pk_info_detail .backbtn {
 		font-size: 3.46666666666667vw;
+		flex-flow: wrap;
 	}
 	#pk_info_detail .backbtn a {
 		max-width: 48vw;
@@ -1616,6 +1628,18 @@ width: 49.81%;
 	/******.googlemapエリア**********/
 	.pk_secondary .GoogleMap {
 		padding-top: 65.67%;
+	}
+
+	.pk_secondary .more_btn_out {
+		margin-top: 3.6666666666667vw;
+	}
+	.pk_secondary .more_btn_out .more_btn {
+		max-width: inherit;
+	}
+	.pk_secondary .more_btn_out .more_btn a {
+		font-size: 3.46666666vw;
+		line-height: 2.14285714285714;
+		padding: 0 0 0 5.3333333333333vw;
 	}
 
 	/*********tabメニュー************/
